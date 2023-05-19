@@ -1,0 +1,42 @@
+body{
+    background-image: url(../img/main_06.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main3 {
+    width: 600px;
+    height: 400px;
+    margin-left: 450px;
+    display: block;
+    margin-top: 100px;
+    position:absolute;
+}
+.main1 {
+    width: 430px;
+    height: 460px;
+    position:absolute;
+    margin-left: 530px;
+    margin-top: 50px;
+}
+.main2 {
+    width: 500px;
+    height: 100px;
+    position:absolute;
+    margin-left: 500px;
+    margin-top: 440px;
+}
+.main5 {
+    width: 300px;
+    margin-left: 600px;
+    margin-top: 560px;
+    position:absolute;
+}
+.main4 {
+    width: 150px;
+    margin-left: 670px;
+    position:absolute;
+    margin-top: 630px;
+    
+}
