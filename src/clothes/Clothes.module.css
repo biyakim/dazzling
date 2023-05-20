@@ -5,3 +5,14 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
+.main03{
+    width: 430px;
+    height: 250px;
+    margin-left: 50px;
+    margin-top: 100px;
+    position:absolute;
+}
+.main02 {
+    width: 300px;
+    position:absolute;
+}
