@@ -9,8 +9,8 @@ function App() {
     <div>
       <Router>
         <Switch>
-          <Route exact path="/" component={() => <Main />}  />
-          <Route path="/Clothes" component={() => <Clothes />}  />
+          <Route exact path="/" component={Main}  />
+          <Route path="/Clothes" component={Clothes}/>
         </Switch>
         
       </Router>

@@ -16,3 +16,16 @@ body{
     width: 300px;
     position:absolute;
 }
+.body{
+    width: 400px;
+    position:absolute;
+    margin-left: 620px;
+}
+.head {
+    width: 200px;
+    margin-left: 720px;
+    margin-top: 179px;
+    position: relative;
+    z-index: 1;
+
+}
