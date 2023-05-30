@@ -19,19 +19,30 @@ body{
 .body{
     width: 400px;
     position:absolute;
-    margin-left: 620px;
+    margin-left: 45px;
 }
 .head {
-    width: 200px;
-    margin-left: 720px;
-    margin-top: 179px;
+    width: 370px;
+    margin-left: 50px;
+    margin-top: 25px;
     position: absolute;
-    
-
 }
 .eyes01 {
     position: absolute;
-    width: 200px;
+    width: 400px;
     margin-left : 30px
+}
+.eyebrow01 {
+    position: absolute;
+}
+.hair01 {
+    width: 380px;
+    position: absolute;
+    margin-left: 500px;
+
+}
+.lips01{
+    position: absolute;
+
 }
 
