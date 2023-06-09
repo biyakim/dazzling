@@ -20,29 +20,37 @@ body{
     width: 400px;
     position:absolute;
     margin-left: 45px;
+    margin-top: 50px;
 }
 .head {
     width: 370px;
     margin-left: 50px;
-    margin-top: 25px;
+    margin-top: 70px;
     position: absolute;
 }
 .eyes01 {
     position: absolute;
-    width: 400px;
-    margin-left : 30px
+    width: 200px;
+    cursor: pointer;
+    margin-left: 400px;
 }
 .eyebrow01 {
     position: absolute;
+    cursor: pointer;
+    margin-left: 300px;
+    width: 200px;
+    margin-left: 700px;
 }
 .hair01 {
-    width: 380px;
+    width: 200px;
     position: absolute;
-    margin-left: 500px;
-
+    cursor: pointer;
 }
 .lips01{
     position: absolute;
+    cursor: pointer;
+    margin-left: 1000px;
+    width: 200px;
 
 }
 
