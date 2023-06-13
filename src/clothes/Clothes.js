@@ -9,12 +9,14 @@ import Draggable from "react-draggable";
 import hair01 from '../img/avatar/hair/hair_01.png';
 import eyebrow01 from '../img/avatar/eyebrow/eyebrow_01.png';
 import lips01 from '../img/avatar/lips/lips_01.png';
+import lips02 from '../img/avatar/lips/lips_02.png';
 
 const Clothes = () => {
   const [selectedeyes, setSelectedeyes] = useState(null);
   const [selectedhair, setSelectedhair] = useState(null);
   const [selectedeyebrow, setSelectedeyebrow] = useState(null);
   const [selectedlips, setSelectedlips] = useState(null);
+  const [selectedlips2, setSelectedlips2] = useState(null);
 
   //이미지 누르면 이미지 바뀌게 하기
   const handleeyesClick = (clothing) => {
@@ -27,6 +29,9 @@ const Clothes = () => {
     setSelectedeyebrow(clothing);
   };
   const handlelipsClick = (clothing) => {
+    setSelectedlips(clothing);
+  };
+  const handlelips2Click = (clothing) => {
     setSelectedlips(clothing);
   };
 
@@ -83,6 +88,11 @@ const Clothes = () => {
           src={lips01}
           onClick={() => handlelipsClick('lips')}
         />
+         <img
+          className={Clothes2.lips02}
+          src={lips02}
+          onClick={() => handlelipsClick('lips2')}
+        />
       </div>
 
       {/* 이미지 누르면 head이미제 입혀지고 null이면 없어지게 하기 */}
@@ -114,6 +124,14 @@ const Clothes = () => {
           className={Clothes2.head}
           src={
             selectedlips === 'lips' ? lips01 : null}
+        />
+
+      )}
+      {handlelips2Click && (
+        <img
+          className={Clothes2.head}
+          src={
+            selectedlips === 'lips2' ? lips02 : null}
         />
 
       )}
