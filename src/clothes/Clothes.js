@@ -1,22 +1,23 @@
 import React, { useState } from 'react';
-import main03 from '../img/main_03.png';
 import main02 from '../img/main_02.png';
 import Clothes2 from './Clothes.module.css';
 import head from '../img/avatar/head.png';
 import body from '../img/avatar/body.png';
 import eyes01 from '../img/avatar/eyes/eyes_01.png';
-import Draggable from "react-draggable";
 import hair01 from '../img/avatar/hair/hair_01.png';
 import eyebrow01 from '../img/avatar/eyebrow/eyebrow_01.png';
 import lips01 from '../img/avatar/lips/lips_01.png';
 import lips02 from '../img/avatar/lips/lips_02.png';
+import lips03 from '../img/avatar/lips/lips_03.png';
+import lips04 from '../img/avatar/lips/lips_04.png';
+import lips05 from '../img/avatar/lips/lips_05.png';
+import lips06 from '../img/avatar/lips/lips_06.png';
 
 const Clothes = () => {
   const [selectedeyes, setSelectedeyes] = useState(null);
   const [selectedhair, setSelectedhair] = useState(null);
   const [selectedeyebrow, setSelectedeyebrow] = useState(null);
   const [selectedlips, setSelectedlips] = useState(null);
-  const [selectedlips2, setSelectedlips2] = useState(null);
 
   //이미지 누르면 이미지 바뀌게 하기
   const handleeyesClick = (clothing) => {
@@ -29,9 +30,6 @@ const Clothes = () => {
     setSelectedeyebrow(clothing);
   };
   const handlelipsClick = (clothing) => {
-    setSelectedlips(clothing);
-  };
-  const handlelips2Click = (clothing) => {
     setSelectedlips(clothing);
   };
 
@@ -93,6 +91,26 @@ const Clothes = () => {
           src={lips02}
           onClick={() => handlelipsClick('lips2')}
         />
+        {/* <img
+          className={Clothes2.lips03}
+          src={lips03}
+          onClick={() => handlelipsClick('lips3')}
+        />
+        <img
+          className={Clothes2.lips04}
+          src={lips04}
+          onClick={() => handlelipsClick('lips4')}
+        />
+        <img
+          className={Clothes2.lips05}
+          src={lips05}
+          onClick={() => handlelipsClick('lips5')}
+        />
+        <img
+          className={Clothes2.lips06}
+          src={lips06}
+          onClick={() => handlelipsClick('lips6')}
+        /> */}
       </div>
 
       {/* 이미지 누르면 head이미제 입혀지고 null이면 없어지게 하기 */}
@@ -123,18 +141,13 @@ const Clothes = () => {
         <img
           className={Clothes2.head}
           src={
-            selectedlips === 'lips' ? lips01 : null}
+            selectedlips === 'lips' ? lips01 : 
+            selectedlips === 'lips2' ? lips02 :
+            null}
         />
 
       )}
-      {handlelips2Click && (
-        <img
-          className={Clothes2.head}
-          src={
-            selectedlips === 'lips2' ? lips02 : null}
-        />
-
-      )}
+      
     </div>
   );
 };
