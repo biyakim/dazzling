@@ -127,3 +127,33 @@ body{
     margin-top: 170px;
     margin-left: 250px;
 }
+.acc01{
+    width: 150px;
+    position: absolute;
+    margin-top: 230px;
+}
+.acc02{
+    width: 110px;
+    position: absolute;
+    margin-top: 290px;
+    margin-left: 100px;
+}
+.top01{
+    width: 330px;
+    position: absolute;
+    margin-top:190px ;
+    margin-left: 0px;
+  
+}
+.top02{
+    width: 280px;
+    position: absolute;
+    margin-top: 240px;
+    margin-left: 190px;
+
+}
+.bottom01{
+    width: 320px;
+    position: absolute;
+    margin-top: 290px;
+}

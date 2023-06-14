@@ -4,28 +4,46 @@ import Clothes2 from './Clothes.module.css';
 import head from '../img/avatar/head.png';
 import body from '../img/avatar/body.png';
 import Clothes01 from '../img/clothes_01.png';
+//hair
+import hair01 from '../img/avatar/hair/hair_01.png';
+import hair02 from '../img/avatar/hair/hair_02.png';
+//eyes
 import eyes01 from '../img/avatar/eyes/eyes_01.png';
 import eyes02 from '../img/avatar/eyes/eyes_02.png';
 import eyes03 from '../img/avatar/eyes/eyes_03.png';
 import eyes04 from '../img/avatar/eyes/eyes_04.png';
-import hair01 from '../img/avatar/hair/hair_01.png';
-import hair02 from '../img/avatar/hair/hair_02.png';
+//eyebrow
 import eyebrow01 from '../img/avatar/eyebrow/eyebrow_01.png';
 import eyebrow02 from '../img/avatar/eyebrow/eyebrow_02.png';
 import eyebrow03 from '../img/avatar/eyebrow/eyebrow_03.png';
 import eyebrow04 from '../img/avatar/eyebrow/eyebrow_04.png';
+//lips
 import lips01 from '../img/avatar/lips/lips_01.png';
 import lips02 from '../img/avatar/lips/lips_02.png';
 import lips03 from '../img/avatar/lips/lips_03.png';
 import lips04 from '../img/avatar/lips/lips_04.png';
 import lips05 from '../img/avatar/lips/lips_05.png';
 import lips06 from '../img/avatar/lips/lips_06.png';
+//accessories
+import acc01 from '../img/avatar/accessories/acc_01.png';
+import acc02 from '../img/avatar/accessories/acc_02.png';
+//옷
+import top01 from '../img/avatar/clothes/top/top_02.png';
+import top02 from '../img/avatar/clothes/top/top_03.png';
+import bottom01 from '../img/avatar/clothes/bottom/bottom_01.png';
+
+
+
+
 
 const Clothes = () => {
   const [selectedeyes, setSelectedeyes] = useState(null);
   const [selectedhair, setSelectedhair] = useState(null);
   const [selectedeyebrow, setSelectedeyebrow] = useState(null);
   const [selectedlips, setSelectedlips] = useState(null);
+  const [selectedaccessories, setSelectedaccessories] = useState(null);
+  const [selectedtop, setSelectedtop] = useState(null);
+  const [selectedbottom, setSelectedbottom] = useState(null);
 
   //이미지 누르면 이미지 바뀌게 하기
   const handleeyesClick = (clothing) => {
@@ -39,6 +57,15 @@ const Clothes = () => {
   };
   const handlelipsClick = (clothing) => {
     setSelectedlips(clothing);
+  };
+  const handleaccessoriesClick = (clothing) => {
+    setSelectedaccessories(clothing);
+  };
+  const handletopClick = (clothing) => {
+    setSelectedtop(clothing);
+  };
+  const handlebottomClick = (clothing) => {
+    setSelectedbottom(clothing);
   };
 
 
@@ -70,7 +97,7 @@ const Clothes = () => {
           position: 'absolute',
           marginLeft: '800px',
           marginTop: '60px',
-          borderRadius: '50px',
+          borderRadius: '20px',
           border: "5px solid #5301BF"
         }}
       >
@@ -78,11 +105,11 @@ const Clothes = () => {
         className={Clothes2.Clothes5}
         style={{
           backgroundColor: '#ffffff',
-          width: '600px',
+          width: '650px',
           height: '800px',
           position: 'relative',
           margin: '60px auto',
-          borderRadius: '50px',
+          borderRadius: '20px',
           overflow: 'auto',
           border: '5px solid #5301BF'
         }}
@@ -91,12 +118,12 @@ const Clothes = () => {
         {/* 머리 이미지 누르면 바뀌게 하기 */}
         <img
           className={Clothes2.hair01}
-          src={hair02}
+          src={hair01}
           onClick={() => handlehairClick('hair')}
         />
         <img
           className={Clothes2.hair02}
-          src={hair01}
+          src={hair02}
           onClick={() => handlehairClick('hair2')}
         />
         {/* 눈썹 이미지 누르면 바뀌게 하기 */}
@@ -176,6 +203,33 @@ const Clothes = () => {
           src={lips06}
           onClick={() => handlelipsClick('lips6')}
         />
+        {/*액세서리 */}
+        <img
+          className={Clothes2.acc01}
+          src={acc01}
+          onClick={() => handleaccessoriesClick('acc1')}
+        />
+        <img
+          className={Clothes2.acc02}
+          src={acc02}
+          onClick={() => handleaccessoriesClick('acc2')}
+        />
+        {/* top */}
+        <img
+          className={Clothes2.top01}
+          src={top01}
+          onClick={() => handletopClick('top1')}
+        />
+        <img
+          className={Clothes2.top02}
+          src={top02}
+          onClick={() => handletopClick('top2')}
+        />
+        <img
+          className={Clothes2.bottom01}
+          src={bottom01}
+          onClick={() => handlebottomClick('bottom1')}
+        />
         </div>
       </div>
 
@@ -227,6 +281,38 @@ const Clothes = () => {
         />
 
       )}
+      
+      {handleaccessoriesClick && (
+        <img
+          className={Clothes2.head}
+          src={
+            selectedaccessories === 'acc1' ? acc01 : 
+            selectedaccessories === 'acc2' ? acc02 :
+            null}
+        />
+
+      )}
+      {handletopClick && (
+        <img
+          className={Clothes2.body}
+          src={
+            selectedtop === 'top1' ? top01 : 
+            selectedtop === 'top2' ? top02 :
+            null}
+        />
+
+      )}
+      {handlebottomClick && (
+        <img
+          className={Clothes2.body}
+          src={
+            selectedbottom === 'bottom1' ? bottom01 : 
+            null}
+        />
+
+      )}
+      
+      
       
     </div>
   );
