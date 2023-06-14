@@ -3,9 +3,17 @@ import main02 from '../img/main_02.png';
 import Clothes2 from './Clothes.module.css';
 import head from '../img/avatar/head.png';
 import body from '../img/avatar/body.png';
+import Clothes01 from '../img/clothes_01.png';
 import eyes01 from '../img/avatar/eyes/eyes_01.png';
+import eyes02 from '../img/avatar/eyes/eyes_02.png';
+import eyes03 from '../img/avatar/eyes/eyes_03.png';
+import eyes04 from '../img/avatar/eyes/eyes_04.png';
 import hair01 from '../img/avatar/hair/hair_01.png';
+import hair02 from '../img/avatar/hair/hair_02.png';
 import eyebrow01 from '../img/avatar/eyebrow/eyebrow_01.png';
+import eyebrow02 from '../img/avatar/eyebrow/eyebrow_02.png';
+import eyebrow03 from '../img/avatar/eyebrow/eyebrow_03.png';
+import eyebrow04 from '../img/avatar/eyebrow/eyebrow_04.png';
 import lips01 from '../img/avatar/lips/lips_01.png';
 import lips02 from '../img/avatar/lips/lips_02.png';
 import lips03 from '../img/avatar/lips/lips_03.png';
@@ -40,6 +48,9 @@ const Clothes = () => {
       <div className="img">
         <img className={Clothes2.main02} src={main02} />
       </div>
+      <div>
+        <img className={Clothes2.Clothes01} src={Clothes01}/>
+      </div>
        {/* 몸 이미지 */}
       <div className="body">
         <img className={Clothes2.body} src={body} />
@@ -53,26 +64,40 @@ const Clothes = () => {
       <div
         className={Clothes2.clothes}
         style={{
-          backgroundColor: 'white',
-          width: '1356px',
-          height: '800px',
+          backgroundColor: '#7857DB',
+          width: '700px',
+          height: '900px',
           position: 'absolute',
-          marginLeft: '500px',
+          marginLeft: '800px',
           marginTop: '60px',
-          borderRadius: '50px'
+          borderRadius: '50px',
+          border: "5px solid #5301BF"
         }}
       >
-        {/* 눈 이미지 누르면 바뀌게 하기 */}
-        <img
-          className={Clothes2.eyes01}
-          src={eyes01}
-          onClick={() => handleeyesClick('eyes')}
-        />
+        <div
+        className={Clothes2.Clothes5}
+        style={{
+          backgroundColor: '#ffffff',
+          width: '600px',
+          height: '800px',
+          position: 'relative',
+          margin: '60px auto',
+          borderRadius: '50px',
+          overflow: 'auto',
+          border: '5px solid #5301BF'
+        }}
+        >
+
         {/* 머리 이미지 누르면 바뀌게 하기 */}
         <img
           className={Clothes2.hair01}
-          src={hair01}
+          src={hair02}
           onClick={() => handlehairClick('hair')}
+        />
+        <img
+          className={Clothes2.hair02}
+          src={hair01}
+          onClick={() => handlehairClick('hair2')}
         />
         {/* 눈썹 이미지 누르면 바뀌게 하기 */}
         <img
@@ -80,6 +105,46 @@ const Clothes = () => {
           src={eyebrow01}
           onClick={() => handleeyebrowClick('eyebrow')}
         />
+        <img
+          className={Clothes2.eyebrow02}
+          src={eyebrow02}
+          onClick={() => handleeyebrowClick('eyebrow2')}
+        />
+        {/* 눈썹 이미지 누르면 바뀌게 하기 */}
+        <img
+          className={Clothes2.eyebrow03}
+          src={eyebrow03}
+          onClick={() => handleeyebrowClick('eyebrow3')}
+        />
+        {/* 눈썹 이미지 누르면 바뀌게 하기 */}
+        <img
+          className={Clothes2.eyebrow04}
+          src={eyebrow04}
+          onClick={() => handleeyebrowClick('eyebrow4')}
+        />
+        {/* 눈 이미지 누르면 바뀌게 하기 */}
+        <img
+          className={Clothes2.eyes01}
+          src={eyes01}
+          onClick={() => handleeyesClick('eyes')}
+        />
+        <img
+          className={Clothes2.eyes02}
+          src={eyes02}
+          onClick={() => handleeyesClick('eyes2')}
+        />
+        <img
+          className={Clothes2.eyes03}
+          src={eyes03}
+          onClick={() => handleeyesClick('eye3')}
+        />
+        <img
+          className={Clothes2.eyes04}
+          src={eyes04}
+          onClick={() => handleeyesClick('eyes4')}
+        />
+        
+        
         {/* 입 이미지 누르면 바뀌게 하기 */}
         <img
           className={Clothes2.lips01}
@@ -91,11 +156,11 @@ const Clothes = () => {
           src={lips02}
           onClick={() => handlelipsClick('lips2')}
         />
-        {/* <img
+        <img
           className={Clothes2.lips03}
           src={lips03}
           onClick={() => handlelipsClick('lips3')}
-        />
+        /> 
         <img
           className={Clothes2.lips04}
           src={lips04}
@@ -110,14 +175,19 @@ const Clothes = () => {
           className={Clothes2.lips06}
           src={lips06}
           onClick={() => handlelipsClick('lips6')}
-        /> */}
+        />
+        </div>
       </div>
 
       {/* 이미지 누르면 head이미제 입혀지고 null이면 없어지게 하기 */}
       {handleeyesClick && (
         <img
           className={Clothes2.head}
-          src={selectedeyes === 'eyes' ? eyes01 : null}
+          src={selectedeyes === 'eyes' ? eyes01 : 
+          selectedeyes === 'eyes2' ? eyes02 :
+          selectedeyes === 'eyes3' ? eyes03 :
+          selectedeyes === 'eyes4' ? eyes04 :
+          null}
         />
 
       )}
@@ -125,7 +195,9 @@ const Clothes = () => {
         <img
           className={Clothes2.head}
           src={
-            selectedhair === 'hair' ? hair01 : null}
+            selectedhair === 'hair' ? hair01 :
+            selectedhair === 'hair2' ? hair02 :
+            null}
         />
 
       )}
@@ -133,7 +205,11 @@ const Clothes = () => {
         <img
           className={Clothes2.head}
           src={
-            selectedeyebrow === 'eyebrow' ? eyebrow01 : null}
+            selectedeyebrow === 'eyebrow' ? eyebrow01 :
+            selectedeyebrow === 'eyebrow2' ? eyebrow02 :
+            selectedeyebrow === 'eyebrow3' ? eyebrow03 :
+            selectedeyebrow === 'eyebrow4' ? eyebrow04 :
+            null}
         />
 
       )}
@@ -143,6 +219,10 @@ const Clothes = () => {
           src={
             selectedlips === 'lips' ? lips01 : 
             selectedlips === 'lips2' ? lips02 :
+            selectedlips === 'lips3' ? lips03 :
+            selectedlips === 'lips4' ? lips04 :
+            selectedlips === 'lips5' ? lips05 :
+            selectedlips === 'lips6' ? lips06 :
             null}
         />
 

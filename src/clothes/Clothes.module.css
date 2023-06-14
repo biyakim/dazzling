@@ -16,48 +16,114 @@ body{
     width: 300px;
     position:absolute;
 }
+.Clothes01 {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    margin-top: 200px;
+    margin-left: 70px;
+
+}
 .body{
     width: 400px;
     position:absolute;
-    margin-left: 45px;
-    margin-top: 50px;
+    margin-left: 260px;
+    margin-top: 150px;
 }
 .head {
     width: 370px;
-    margin-left: 50px;
-    margin-top: 70px;
+    margin-left: 260px;
+    margin-top: 180px;
     position: absolute;
-}
-.eyes01 {
-    position: absolute;
-    width: 200px;
-    cursor: pointer;
-    margin-left: 400px;
-}
-.eyebrow01 {
-    position: absolute;
-    cursor: pointer;
-    margin-left: 300px;
-    width: 200px;
-    margin-left: 700px;
 }
 .hair01 {
-    width: 200px;
+    width: 150px;
     position: absolute;
-    cursor: pointer;
 }
-.lips01{
+.hair02 {
+    width: 150px;
     position: absolute;
-    cursor: pointer;
-    margin-left: 1000px;
-    width: 200px;
-
+    margin: 0;
+    margin-left: 150px;
 }
-.lips02{
+.eyebrow01 {
+    width: 150px;
+    margin-top: 90px;
     position: absolute;
-    cursor: pointer;
-    width: 200px;
-    margin-left: 1000px;
-    margin-left: 1100px;
-
+}
+.eyebrow02 {
+    width: 150px;
+    margin-top: 90px;
+    position: absolute;
+    margin-left: 100px;
+}
+.eyebrow03 {
+    width: 150px;
+    margin-top: 90px;
+    position: absolute;
+    margin-left: 200px;
+}
+.eyebrow04 {
+    width: 150px;
+    margin-top: 90px;
+    position: absolute;
+    margin-left: 300px;
+}
+.eyes01 {
+    width: 150px;
+    position: absolute;
+    margin-top: 130px;
+}
+.eyes02 {
+    width: 150px;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 90px;
+}
+.eyes03 {
+    width: 150px;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 180px;
+}
+.eyes04 {
+    width: 150px;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 270px;
+}
+.lips01 {
+    width: 150px;
+    position: absolute;
+    margin-top: 170px;
+}
+.lips02 {
+    width: 150px;
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 50px;
+}
+.lips03 {
+    width: 150px;
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 100px;
+}
+.lips04 {
+    width: 150px;
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 150px;
+}
+.lips05 {
+    width: 150px;
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 200px;
+}
+.lips06 {
+    width: 150px;
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 250px;
 }
