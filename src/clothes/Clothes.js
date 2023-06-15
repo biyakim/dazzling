@@ -9,6 +9,10 @@ import eyes01 from '../img/avatar/eyes/eyes_01.png';
 import eyes02 from '../img/avatar/eyes/eyes_02.png';
 import eyes03 from '../img/avatar/eyes/eyes_03.png';
 import eyes04 from '../img/avatar/eyes/eyes_04.png';
+import eyes05 from '../img/avatar/eyes/eyes_05.png';
+import eyes06 from '../img/avatar/eyes/eyes_06.png';
+import eyes07 from '../img/avatar/eyes/eyes_07.png';
+//hair
 import hair01 from '../img/avatar/hair/hair_01.png';
 import hair02 from '../img/avatar/hair/hair_02.png';
 import hair03 from '../img/avatar/hair/hair_03.png';
@@ -124,6 +128,9 @@ const Clothes = () => {
           <div className={Clothes2.back7}></div>
           <div className={Clothes2.back8}></div>
           <div className={Clothes2.back9}></div>
+          <div className={Clothes2.back10}></div>
+          <div className={Clothes2.back11}></div>
+          <div className={Clothes2.back12}></div>
 
 
         {/* 머리 이미지 누르면 바뀌게 하기 */}
@@ -181,14 +188,28 @@ const Clothes = () => {
         <img
           className={Clothes2.eyes03}
           src={eyes03}
-          onClick={() => handleeyesClick('eye3')}
+          onClick={() => handleeyesClick('eyes3')}
         />
         <img
           className={Clothes2.eyes04}
           src={eyes04}
           onClick={() => handleeyesClick('eyes4')}
         />
-        
+        <img
+          className={Clothes2.eyes05}
+          src={eyes05}
+          onClick={() => handleeyesClick('eyes5')}
+        />
+        <img
+          className={Clothes2.eyes06}
+          src={eyes06}
+          onClick={() => handleeyesClick('eyes6')}
+        />
+        <img
+          className={Clothes2.eyes07}
+          src={eyes07}
+          onClick={() => handleeyesClick('eyes7')}
+        />
         
         {/* 입 이미지 누르면 바뀌게 하기 */}
         <img
@@ -270,6 +291,9 @@ const Clothes = () => {
           selectedeyes === 'eyes2' ? eyes02 :
           selectedeyes === 'eyes3' ? eyes03 :
           selectedeyes === 'eyes4' ? eyes04 :
+          selectedeyes === 'eyes5' ? eyes05 :
+          selectedeyes === 'eyes6' ? eyes06 :
+          selectedeyes === 'eyes7' ? eyes07 :
           null}
         />
 
@@ -281,6 +305,7 @@ const Clothes = () => {
             selectedhair === 'hair' ? hair01 :
             selectedhair === 'hair2' ? hair02 :
             selectedhair === 'hair3' ? hair03 :
+            
             null}
         />
       )}
