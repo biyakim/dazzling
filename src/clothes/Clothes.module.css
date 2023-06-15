@@ -28,132 +28,233 @@ body{
     width: 400px;
     position:absolute;
     margin-left: 260px;
-    margin-top: 150px;
+    margin-top: 230px;
 }
 .head {
     width: 370px;
     margin-left: 260px;
-    margin-top: 180px;
+    margin-top: 255px;
     position: absolute;
 }
 .hair01 {
     width: 150px;
+    margin-top: 20px;
+    margin-left: 25px;
     position: absolute;
 }
+.back {
+    background-color: lightgrey;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.back2 {
+    background-color: lightgrey;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 180px;
+}
+.back3 {
+    background-color: lightgrey;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 350px;
+}
+.back4 {
+    background-color: lightgrey;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 520px;
+}
+.back5 {
+    background-color: lightgrey;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 690px;
+}
+.back6 {
+    background-color: lightgrey;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 900px;
+}
+.back7 {
+    background-color: lightgrey;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 1120px;
+}
+.back8 {
+    background-color: lightgrey;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 1340px;
+}
+.back9 {
+    background-color: lightgrey;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 1560px;
+}
 .hair02 {
+    background-color: white;
     width: 150px;
     position: absolute;
-    margin: 0;
-    margin-left: 150px;
+    margin-left:230px;
+    margin-top: 20px;
+}
+.hair03 {
+    background-color: white;
+    width: 150px;
+    position: absolute;
+    margin-left:430px;
+    margin-top: 20px;
+}
+.back01 {
+    width: 150px;
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 30px;
 }
 .eyebrow01 {
     width: 150px;
-    margin-top: 90px;
+    margin-top: 320px;
+    margin-left: 30px;
     position: absolute;
 }
 .eyebrow02 {
     width: 150px;
-    margin-top: 90px;
+    margin-top: 320px;
     position: absolute;
-    margin-left: 100px;
+    margin-left: 230px;
 }
 .eyebrow03 {
     width: 150px;
-    margin-top: 90px;
+    margin-top: 320px;
     position: absolute;
-    margin-left: 200px;
+    margin-left: 430px;
 }
 .eyebrow04 {
     width: 150px;
-    margin-top: 90px;
+    margin-top: 320px;
     position: absolute;
-    margin-left: 300px;
+    margin-left: 630px;
 }
 .eyes01 {
     width: 150px;
     position: absolute;
-    margin-top: 130px;
+    margin-top: 470px;
+    margin-left: 25px;
 }
 .eyes02 {
     width: 150px;
     position: absolute;
-    margin-top: 130px;
-    margin-left: 90px;
+    margin-top: 470px;
+    margin-left: 230px;
 }
 .eyes03 {
     width: 150px;
     position: absolute;
-    margin-top: 130px;
-    margin-left: 180px;
+    margin-top: 470px;
+    margin-left: 430px;
 }
 .eyes04 {
     width: 150px;
     position: absolute;
-    margin-top: 130px;
-    margin-left: 270px;
+    margin-top: 470px;
+    margin-left: 630px;
 }
 .lips01 {
     width: 150px;
     position: absolute;
-    margin-top: 170px;
+    margin-top: 650px;
+    margin-left: 25px;
 }
 .lips02 {
     width: 150px;
     position: absolute;
-    margin-top: 170px;
-    margin-left: 50px;
+    margin-top: 650px;
+    margin-left: 230px;
 }
 .lips03 {
     width: 150px;
     position: absolute;
-    margin-top: 170px;
-    margin-left: 100px;
+    margin-top: 650px;
+    margin-left: 430px;
 }
 .lips04 {
     width: 150px;
     position: absolute;
-    margin-top: 170px;
-    margin-left: 150px;
+    margin-top: 650px;
+    margin-left: 630px;
 }
 .lips05 {
     width: 150px;
     position: absolute;
-    margin-top: 170px;
-    margin-left: 200px;
+    margin-top: 650px;
+    margin-left: 800px;
 }
 .lips06 {
     width: 150px;
     position: absolute;
-    margin-top: 170px;
-    margin-left: 250px;
+    margin-top: 860px;
+    margin-left: 20px;
 }
-.acc01{
+.bottom01 {
+    width: 200px;
+    position: absolute;
+    margin-top: 1190px;
+}
+.top02 {
+    width: 200px;
+    position: absolute;
+    margin-top: 1000px;
+}
+.top03 {
+    width: 200px;
+    position: absolute;
+    margin-top: 1000px;
+    margin-left: 230px;
+}
+.acc01 {
     width: 150px;
     position: absolute;
-    margin-top: 230px;
+    margin-top: 1510px;
+    margin-left: 25px;
 }
-.acc02{
-    width: 110px;
+.acc02 {
+    width: 150px;
     position: absolute;
-    margin-top: 290px;
-    margin-left: 100px;
+    margin-top: 1550px;
+    margin-left: 260px;
 }
-.top01{
-    width: 330px;
+.acc03 {
+    width: 150px;
     position: absolute;
-    margin-top:190px ;
-    margin-left: 0px;
-  
+    margin-top: 1510px;
+    margin-left: 430px;
 }
-.top02{
-    width: 280px;
+.acc04 {
+    width: 200px;
     position: absolute;
-    margin-top: 240px;
-    margin-left: 190px;
-
-}
-.bottom01{
-    width: 320px;
-    position: absolute;
-    margin-top: 290px;
+    margin-top: 1510px;
+    margin-left: 630px;
 }
