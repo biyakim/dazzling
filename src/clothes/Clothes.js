@@ -95,7 +95,7 @@ const Clothes = () => {
       </div>
 
         {/* 옷장 */}
-      <div
+        <div
         className={Clothes2.clothes}
         style={{
           backgroundColor: '#7857DB',
@@ -111,7 +111,7 @@ const Clothes = () => {
         <div
         className={Clothes2.Clothes5}
         style={{
-          backgroundColor: '#ffffff',
+          backgroundColor: 'rgb(226,218,250)',
           width: '1000px',
           height: '800px',
           position: 'relative',
@@ -121,18 +121,56 @@ const Clothes = () => {
           border: '5px solid #5301BF'
         }}
         >
-          <div className={Clothes2.back}></div>
-          <div className={Clothes2.back2}></div>
-          <div className={Clothes2.back3}></div>
-          <div className={Clothes2.back4}></div>
-          <div className={Clothes2.back5}></div>
-          <div className={Clothes2.back6}></div>
-          <div className={Clothes2.back7}></div>
-          <div className={Clothes2.back8}></div>
-          <div className={Clothes2.back9}></div>
-          <div className={Clothes2.back10}></div>
-          <div className={Clothes2.back11}></div>
-          <div className={Clothes2.back12}></div>
+            <div className={Clothes2.hback1}></div>
+            <div className={Clothes2.hback2}></div>
+            <div className={Clothes2.hback3}></div>
+            <div className={Clothes2.hback4}></div>
+            <div className={Clothes2.hback5}></div>
+            <div className={Clothes2.hback6}></div>
+            <div className={Clothes2.hback7}></div>
+            <div className={Clothes2.hback8}></div>
+            <div className={Clothes2.hback9}></div>
+            <div className={Clothes2.hback10}></div>
+
+
+            <div className={Clothes2.bback1}></div>
+            <div className={Clothes2.bback2}></div>
+            <div className={Clothes2.bback3}></div>
+            <div className={Clothes2.bback4}></div>
+            <div className={Clothes2.bback5}></div>
+
+            <div className={Clothes2.eback1}></div>
+            <div className={Clothes2.eback2}></div>
+            <div className={Clothes2.eback3}></div>
+            <div className={Clothes2.eback4}></div>
+            <div className={Clothes2.eback5}></div>
+            <div className={Clothes2.eback6}></div>
+            <div className={Clothes2.eback7}></div>
+            <div className={Clothes2.eback8}></div>
+            <div className={Clothes2.eback9}></div>
+            <div className={Clothes2.eback10}></div>
+
+            <div className={Clothes2.lback1}></div>
+            <div className={Clothes2.lback2}></div>
+            <div className={Clothes2.lback3}></div>
+            <div className={Clothes2.lback4}></div>
+            <div className={Clothes2.lback5}></div>
+            <div className={Clothes2.lback6}></div>
+            <div className={Clothes2.lback7}></div>
+            <div className={Clothes2.lback8}></div>
+            <div className={Clothes2.lback9}></div>
+            <div className={Clothes2.lback10}></div>
+
+            <div className={Clothes2.tback1}></div>
+            <div className={Clothes2.tback2}></div>
+            <div className={Clothes2.tback3}></div>
+            <div className={Clothes2.tback4}></div>
+            <div className={Clothes2.tback5}></div>
+            <div className={Clothes2.tback6}></div>
+            <div className={Clothes2.tback7}></div>
+            <div className={Clothes2.tback8}></div>
+            <div className={Clothes2.tback9}></div>
+            <div className={Clothes2.tback10}></div>
 
 
         {/* 머리 이미지 누르면 바뀌게 하기 */}
