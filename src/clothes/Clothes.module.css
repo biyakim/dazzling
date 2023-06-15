@@ -175,11 +175,9 @@ body{
 
 }  
 
-
-
 /*눈썹*/
 .bback1{
-    background-color:white ;
+    background-color:rgb(188, 167, 249) ;
     width: 166px;
     height: 150px;
     position: absolute;
@@ -449,7 +447,7 @@ body{
 }
 
 .lback1{
-    background-color:white ;
+    background-color:rgb(255, 255, 255) ;
     width: 166px;
     height: 150px;
     position: absolute;

@@ -39,7 +39,6 @@ import acc02 from '../img/avatar/accessories/acc_02.png';
 import acc03 from '../img/avatar/accessories/acc_03.png';
 import acc04 from '../img/avatar/accessories/acc_04.png';
 
-
 const Clothes = () => {
   const [selectedeyes, setSelectedeyes] = useState(null);
   const [selectedhair, setSelectedhair] = useState(null);
@@ -50,31 +49,14 @@ const Clothes = () => {
   const [selectedbottom, setSelectedbottom] = useState(null);
 
   //이미지 누르면 이미지 바뀌게 하기
-  const handleeyesClick = (clothing) => {
-    setSelectedeyes(clothing);
-  };
-  const handlehairClick = (clothing) => {
-    setSelectedhair(clothing);
-  };
-  const handleeyebrowClick = (clothing) => {
-    setSelectedeyebrow(clothing);
-  };
-  const handlelipsClick = (clothing) => {
-    setSelectedlips(clothing);
-  };
-  const handletopClick = (clothing) => {
-    setSelectedtop(clothing);
-  };
-  const handlebottomClick = (clothing) => {
-    setSelectedbottom(clothing);
-  };
-  const handleaccClick = (clothing) => {
-    setSelectedacc((prevSelectedacc) =>
-      prevSelectedacc === clothing ? null : clothing
-    );
-  };
-
-
+  const handleeyesClick = (clothing) => {setSelectedeyes(clothing);};
+  const handlehairClick = (clothing) => {setSelectedhair(clothing);};
+  const handleeyebrowClick = (clothing) => {setSelectedeyebrow(clothing);};
+  const handlelipsClick = (clothing) => {setSelectedlips(clothing);};
+  const handletopClick = (clothing) => {setSelectedtop(clothing);};
+  const handlebottomClick = (clothing) => {setSelectedbottom(clothing);};
+  const handleaccClick = (clothing) => {setSelectedacc((prevSelectedacc) =>
+    prevSelectedacc === clothing ? null : clothing);};
 
   return (
     <div>
@@ -95,8 +77,7 @@ const Clothes = () => {
       </div>
 
         {/* 옷장 */}
-        <div
-        className={Clothes2.clothes}
+        <div className={Clothes2.clothes}
         style={{
           backgroundColor: '#7857DB',
           width: '1070px',
@@ -108,6 +89,7 @@ const Clothes = () => {
           border: "5px solid #5301BF"
         }}
       >
+      
         <div
         className={Clothes2.Clothes5}
         style={{
@@ -121,6 +103,35 @@ const Clothes = () => {
           border: '5px solid #5301BF'
         }}
         >
+          {/*얼굴 버튼 */}
+        <button type="button"  onclick="location.href='Clothes2.js' "className={Clothes2.clothes}
+        style={{
+          width:'160px',
+          height:'60px',
+          color:'white',
+          fontWeight:'bold',
+          backgroundColor: 'rgb(188, 167, 249)',
+          borderRadius:'10px',
+          marginLeft:'310px',
+          marginTop: '20px',
+          border: '3px solid #5301BF'
+        }}>MAKE UP</button>
+
+        {/*옷 버튼 */}
+      <button className={Clothes2.clothes}
+        style={{
+          width:'160px',
+          height:'60px',
+          color:'white',
+          fontWeight:'bold',
+          backgroundColor: 'rgb(188, 167, 249)',
+          borderRadius:'10px',
+          marginLeft:'20px',
+          marginTop: '20px',
+          marginBottom:'20px',
+          border: '3px solid #5301BF'
+        }}>CLOSET</button>
+
             <div className={Clothes2.hback1}></div>
             <div className={Clothes2.hback2}></div>
             <div className={Clothes2.hback3}></div>
@@ -131,7 +142,6 @@ const Clothes = () => {
             <div className={Clothes2.hback8}></div>
             <div className={Clothes2.hback9}></div>
             <div className={Clothes2.hback10}></div>
-
 
             <div className={Clothes2.bback1}></div>
             <div className={Clothes2.bback2}></div>
@@ -190,11 +200,9 @@ const Clothes = () => {
           onClick={() => handlehairClick('hair3')}
         />
 
-        
         {/* 눈썹 이미지 누르면 바뀌게 하기 */}
         <img
-          className={Clothes2.eyebrow01}
-          src={eyebrow01}
+          className={Clothes2.eyebrow01} src={eyebrow01}
           onClick={() => handleeyebrowClick('eyebrow')}
         />
         <img
