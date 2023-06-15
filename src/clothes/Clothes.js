@@ -69,7 +69,9 @@ const Clothes = () => {
     setSelectedbottom(clothing);
   };
   const handleaccClick = (clothing) => {
-    setSelectedacc(clothing);
+    setSelectedacc((prevSelectedacc) =>
+      prevSelectedacc === clothing ? null : clothing
+    );
   };
 
 
@@ -365,13 +367,43 @@ const Clothes = () => {
           className={Clothes2.body}
           src={
             selectedacc === 'acc' ? acc01 : 
+            // selectedacc === 'acc2' ? acc02 :
+            // selectedacc === 'acc3' ? acc03 :
+            // selectedacc === 'acc4' ? acc04 :
+            null}
+        />
+
+      )}
+      {handleaccClick && (
+        <img
+          className={Clothes2.body}
+          src={
             selectedacc === 'acc2' ? acc02 :
+            // selectedacc === 'acc3' ? acc03 :
+            // selectedacc === 'acc4' ? acc04 :
+            null}
+        />
+
+      )}
+      {handleaccClick && (
+        <img
+          className={Clothes2.body}
+          src={
             selectedacc === 'acc3' ? acc03 :
+            // selectedacc === 'acc4' ? acc04 :
+            null}
+        />
+
+      )}  
+      {handleaccClick && (
+        <img
+          className={Clothes2.body}
+          src={
             selectedacc === 'acc4' ? acc04 :
             null}
         />
 
-      )}   
+      )}            
     </div>
   );
 };
