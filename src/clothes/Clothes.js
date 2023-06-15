@@ -89,7 +89,6 @@ const Clothes = () => {
           border: "5px solid #5301BF"
         }}
       >
-      
         <div
         className={Clothes2.Clothes5}
         style={{
@@ -132,6 +131,7 @@ const Clothes = () => {
           border: '3px solid #5301BF'
         }}>CLOSET</button>
 
+          {/*head*/}
             <div className={Clothes2.hback1}></div>
             <div className={Clothes2.hback2}></div>
             <div className={Clothes2.hback3}></div>
@@ -143,12 +143,14 @@ const Clothes = () => {
             <div className={Clothes2.hback9}></div>
             <div className={Clothes2.hback10}></div>
 
+          {/*brow*/}
             <div className={Clothes2.bback1}></div>
             <div className={Clothes2.bback2}></div>
             <div className={Clothes2.bback3}></div>
             <div className={Clothes2.bback4}></div>
             <div className={Clothes2.bback5}></div>
 
+          {/*eye */}
             <div className={Clothes2.eback1}></div>
             <div className={Clothes2.eback2}></div>
             <div className={Clothes2.eback3}></div>
@@ -160,6 +162,7 @@ const Clothes = () => {
             <div className={Clothes2.eback9}></div>
             <div className={Clothes2.eback10}></div>
 
+          {/*lip */}
             <div className={Clothes2.lback1}></div>
             <div className={Clothes2.lback2}></div>
             <div className={Clothes2.lback3}></div>
@@ -171,6 +174,7 @@ const Clothes = () => {
             <div className={Clothes2.lback9}></div>
             <div className={Clothes2.lback10}></div>
 
+          {/*top */}
             <div className={Clothes2.tback1}></div>
             <div className={Clothes2.tback2}></div>
             <div className={Clothes2.tback3}></div>
@@ -181,7 +185,6 @@ const Clothes = () => {
             <div className={Clothes2.tback8}></div>
             <div className={Clothes2.tback9}></div>
             <div className={Clothes2.tback10}></div>
-
 
         {/* 머리 이미지 누르면 바뀌게 하기 */}
         <img
@@ -382,7 +385,6 @@ const Clothes = () => {
             selectedlips === 'lips6' ? lips06 :
             null}
         />
-
       )}
 
       {handlebottomClick && (
