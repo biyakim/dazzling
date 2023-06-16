@@ -75,9 +75,9 @@ const Clothes = () => {
   };
 
   //closet 버튼
-  const handleClosetClick=()=>{
+ /* const handleClosetClick=()=>{
     window.location.href ='../clothes/Clothes2'
-  };
+  };*/
       
 
   return (
@@ -138,20 +138,7 @@ const Clothes = () => {
           border: '3px solid #5301BF'
         }}>MAKE UP</button>
 
-        {/*옷 버튼 */}
-      <button onClick={handleClosetClick}
-        style={{
-          width:'160px',
-          height:'60px',
-          color:'white',
-          fontWeight:'bold',
-          backgroundColor: 'rgb(188, 167, 249)',
-          borderRadius:'10px',
-          marginLeft:'20px',
-          marginTop: '20px',
-          marginBottom:'20px',
-          border: '3px solid #5301BF'
-        }}>CLOSET</button>
+        
 
           {/*head*/}
             <div className={Clothes2.hback1}></div>
@@ -429,6 +416,8 @@ const Clothes = () => {
         />
 
       )}
+
+      
 
       {handleaccClick && (
         <img
