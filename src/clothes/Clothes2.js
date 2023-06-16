@@ -40,7 +40,6 @@ import acc03 from '../img/avatar/accessories/acc_03.png';
 import acc04 from '../img/avatar/accessories/acc_04.png';
 
 const Clothes = () => {
-  const [showElements, setShowElements] = useState(false);
   const [selectedeyes, setSelectedeyes] = useState(null);
   const [selectedhair, setSelectedhair] = useState(null);
   const [selectedeyebrow, setSelectedeyebrow] = useState(null);
@@ -53,29 +52,32 @@ const Clothes = () => {
   const [selectedbottom, setSelectedbottom] = useState(null);
 
   //이미지 누르면 이미지 바뀌게 하기
-  const handleeyesClick = (clothing) => {setSelectedeyes(clothing); setShowElements(false)};
-  const handlehairClick = (clothing) => {setSelectedhair(clothing); setShowElements(false)};
-  const handleeyebrowClick = (clothing) => {setSelectedeyebrow(clothing); setShowElements(false)};
-  const handlelipsClick = (clothing) => {setSelectedlips(clothing); setShowElements(false)};
-  const handletopClick = (clothing) => {setSelectedtop(clothing);setShowElements(true);};
-  const handlebottomClick = (clothing) => {setSelectedbottom(clothing);setShowElements(true);};
+  const handleeyesClick = (clothing) => {setSelectedeyes(clothing);};
+  const handlehairClick = (clothing) => {setSelectedhair(clothing);};
+  const handleeyebrowClick = (clothing) => {setSelectedeyebrow(clothing);};
+  const handlelipsClick = (clothing) => {setSelectedlips(clothing);};
+  const handletopClick = (clothing) => {setSelectedtop(clothing);};
+  const handlebottomClick = (clothing) => {setSelectedbottom(clothing);};
   const handleaccClick = (clothing) => {setSelectedacc((prevSelectedacc) =>
-    prevSelectedacc === clothing ? null : clothing); setShowElements(true);};
+    prevSelectedacc === clothing ? null : clothing);};
   const handleacc2Click = (clothing) => {setSelectedacc2((prevSelectedacc2) =>
-    prevSelectedacc2 === clothing ? null : clothing); setShowElements(true);};
+    prevSelectedacc2 === clothing ? null : clothing);};
 
   const handleacc3Click = (clothing) => {setSelectedacc3((prevSelectedacc3) =>
-    prevSelectedacc3 === clothing ? null : clothing); setShowElements(true);};
+    prevSelectedacc3 === clothing ? null : clothing);}
 
   const handleacc4Click = (clothing) => {setSelectedacc4((prevSelectedacc4) =>
-      prevSelectedacc4 === clothing ? null : clothing); setShowElements(true);};
-  const handleClosetButtonClick = () => {
-        setShowElements(true);
+      prevSelectedacc4 === clothing ? null : clothing);};
+
+          //makeup 버튼
+  const handleFaceClick=()=>{
+    window.location.href ='../clothes/Clothes'
   };
-    
-  const handleClosetButton2Click = () => {
-        setShowElements(false);
-  }
+
+  //closet 버튼
+ /* const handleClosetClick=()=>{
+    window.location.href ='../clothes/Clothes2'
+  };*/
       
 
   return (
@@ -119,12 +121,11 @@ const Clothes = () => {
           margin: '60px auto',
           borderRadius: '20px',
           overflow: 'auto',
-          border: '5px solid #5301BF',
-          display: showElements ? 'none' : 'block'
+          border: '5px solid #5301BF'
         }}
         >
           {/*얼굴 버튼 */}
-        <button
+        <button onClick={handleFaceClick}
         style={{
           width:'160px',
           height:'60px',
@@ -137,20 +138,7 @@ const Clothes = () => {
           border: '3px solid #5301BF'
         }}>MAKE UP</button>
 
-        {/*옷 버튼 */}
-      <button
-        style={{
-          width:'160px',
-          height:'60px',
-          color:'white',
-          fontWeight:'bold',
-          backgroundColor: 'rgb(188, 167, 249)',
-          borderRadius:'10px',
-          marginLeft:'20px',
-          marginTop: '20px',
-          marginBottom:'20px',
-          border: '3px solid #5301BF',
-        }}onClick={handleClosetButtonClick}> CLOSET</button>
+        
 
           {/*head*/}
             <div className={Clothes2.hback1}></div>
@@ -314,75 +302,6 @@ const Clothes = () => {
           src={lips06}
           onClick={() => handlelipsClick('lips6')}
         />
-        </div>
-        <div
-        className={Clothes2.Clothes6}
-        style={{
-          backgroundColor: 'rgb(226,218,250)',
-          width: '1000px',
-          height: '800px',
-          position: 'relative',
-          margin: '60px auto',
-          borderRadius: '20px',
-          overflow: 'auto',
-          border: '5px solid #5301BF',
-          display: showElements ? 'block' : 'none'
-        }}
-        >
-        <div>
-        <button type="button" className={Clothes2.clothes}
-        style={{
-          width:'160px',
-          height:'60px',
-          color:'white',
-          fontWeight:'bold',
-          backgroundColor: 'rgb(188, 167, 249)',
-          borderRadius:'10px',
-          marginLeft:'310px',
-          marginTop: '20px',
-          border: '3px solid #5301BF'
-        }} onClick={handleClosetButton2Click}>MAKE UP</button>
-
-        {/*옷 버튼 */}
-      <button className={Clothes2.clothes}
-        style={{
-          width:'160px',
-          height:'60px',
-          color:'white',
-          fontWeight:'bold',
-          backgroundColor: 'rgb(188, 167, 249)',
-          borderRadius:'10px',
-          marginLeft:'20px',
-          marginTop: '20px',
-          marginBottom:'20px',
-          border: '3px solid #5301BF',
-        }}> CLOSET</button>
-        </div>
-
-        {/*bottom */}
-        <div className={Clothes2.boback1}></div>
-            <div className={Clothes2.boback2}></div>
-            <div className={Clothes2.boback3}></div>
-            <div className={Clothes2.boback4}></div>
-            <div className={Clothes2.boback5}></div>
-            <div className={Clothes2.boback6}></div>
-            <div className={Clothes2.boback7}></div>
-            <div className={Clothes2.boback8}></div>
-            <div className={Clothes2.boback9}></div>
-            <div className={Clothes2.boback10}></div>
-          {/* top */}
-            <div className={Clothes2.tback1}></div>
-            <div className={Clothes2.tback2}></div>
-            <div className={Clothes2.tback3}></div>
-            <div className={Clothes2.tback4}></div>
-            <div className={Clothes2.tback5}></div>
-            <div className={Clothes2.tback6}></div>
-            <div className={Clothes2.tback7}></div>
-            <div className={Clothes2.tback8}></div>
-            <div className={Clothes2.tback9}></div>
-            <div className={Clothes2.tback10}></div>
-
-
         {/* bottom */}
         <img
           className={Clothes2.bottom01}
@@ -422,7 +341,8 @@ const Clothes = () => {
           onClick={() => handleacc4Click('acc4')}
         />
         </div>
-        </div>
+      </div>
+
       {/* 이미지 누르면 head이미제 입혀지고 null이면 없어지게 하기 */}
       {handleeyesClick && (
         <img
@@ -496,6 +416,8 @@ const Clothes = () => {
         />
 
       )}
+
+      
 
       {handleaccClick && (
         <img

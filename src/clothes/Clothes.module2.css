@@ -1,0 +1,651 @@
+body{
+    background-image: url(../img/main_06.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main03{
+    width: 430px;
+    height: 250px;
+    margin-left: 50px;
+    margin-top: 100px;
+    position:absolute;
+}
+.main02 {
+    width: 300px;
+    position:absolute;
+}
+.Clothes01 {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    margin-top: 200px;
+    margin-left: 70px;
+
+}
+.body{
+    width: 400px;
+    position:absolute;
+    margin-left: 260px;
+    margin-top: 230px;
+}
+.head {
+    width: 370px;
+    margin-left: 260px;
+    margin-top: 255px;
+    position: absolute;
+}
+/*머리*/
+.hback1 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.hair01 {
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 25px;
+    position: absolute;
+    /*border: 4px solid #a076d8;*/
+}
+.hair01:hover{
+    width: 150px;
+    margin-top: 45px;
+    transform: scale(1.2);
+}
+
+.hback2 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}   
+.hair02 {
+    width: 150px;
+    position: absolute;
+    margin-left:220px;
+    margin-top: 33px;
+}
+.hair02:hover{
+    width: 150px;
+    margin-left: 220px;
+    margin-top: 50px;
+    transform: scale(1.2);
+}
+.hback3 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+}   
+.hair03 {
+    width: 130px;
+    position: absolute;
+    margin-left:420px;
+    margin-top: 25px;
+}
+.hair03:hover{
+    width: 120px;
+    margin-top: 40px;
+    margin-left:423px;
+    transform: scale(1.2);
+}
+
+.hback4 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 590px;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}   
+.hback5 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 780px;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}   
+
+.hback6 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 190px;
+    border-radius: 10px;
+
+}
+.hback7 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 190px;
+    border-radius: 10px;
+
+}   
+.hback8 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 190px;
+    border-radius: 10px;
+
+}   
+.hback9 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 590px;
+    margin-top: 190px;
+    border-radius: 10px;
+
+}   
+.hback10 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 780px;
+    margin-top: 190px;
+    border-radius: 10px;
+
+}  
+
+/*눈썹*/
+.bback1{
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 360px;
+    border-radius: 10px;
+}
+.eyebrow01 {
+    width: 180px;
+    margin-top: 340px;
+    margin-left: 20px;
+    position: absolute;
+}
+.eyebrow01:hover{
+    width: 200px;
+    transform: scale(1.2);
+}
+.bback2 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 360px;
+    border-radius: 10px;
+}   
+.eyebrow02 {
+    width: 180px;
+    margin-top: 340px;
+    margin-left: 215px;
+    position: absolute;
+}
+.eyebrow02:hover{
+    width: 210px;
+    margin-left: 205px;
+    transform: scale(1.2);
+}
+.bback3 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 360px;
+    border-radius: 10px;
+}   
+.eyebrow03 {
+    width: 180px;
+    margin-top: 340px;
+    margin-left: 405px;
+    position: absolute;
+}
+.eyebrow03:hover{
+    width: 210px;
+    margin-left:390px;
+    transform: scale(1.2);
+}
+.bback4 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 590px;
+    margin-top: 360px;
+    border-radius: 10px;
+}   
+.eyebrow04 {
+    width: 180px;
+    margin-top: 340px;
+    margin-left: 405px;
+    position: absolute;
+}
+.eyebrow04:hover{
+    width: 210px;
+    margin-left:580px;
+    transform: scale(1.2);
+}
+.eyebrow04 {
+    width: 180px;
+    margin-top: 340px;
+    margin-left: 590px;
+    position: absolute;
+}
+.bback5 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 780px;
+    margin-top: 360px;
+    border-radius: 10px;
+
+}  
+
+/*눈*/
+.eback1{
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 530px;
+    border-radius: 10px;
+}
+.eyes01 {
+    width: 170px;
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 25px;
+}
+.eyes01:hover {
+    width: 190px;
+    transform: scale(1.2);
+}
+.eback2 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 530px;
+    border-radius: 10px;
+}   
+.eyes02 {
+    width: 170px;
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 215px;
+}
+.eyes02:hover {
+    width: 190px;
+    margin-left: 205px;
+    transform: scale(1.2);
+}
+.eback3 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 530px;
+    border-radius: 10px;
+}   
+.eyes03 {
+    width: 170px;
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 405px;
+}
+.eyes03:hover {
+    width: 200px;
+    margin-left: 395px;
+    margin-top: 490px;
+    transform: scale(1.2);
+}
+.eback4 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 590px;
+    margin-top: 530px;
+    border-radius: 10px;
+}   
+.eyes04 {
+    width: 170px;
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 595px;
+}
+.eyes04:hover {
+    width: 200px;
+    margin-top: 490px;
+    margin-left: 585px;
+    transform: scale(1.2);
+}
+.eback5 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 780px;
+    margin-top: 530px;
+    border-radius: 10px;
+}
+.eyes05 {
+    width: 170px;
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 782px;
+}
+.eyes05:hover {
+    width: 200px;
+    margin-left: 775px;
+    margin-top: 490px;
+    transform: scale(1.2);
+}
+
+.eback6{
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 700px;
+    border-radius: 10px;
+}
+.eyes06 {
+    width: 170px;
+    position: absolute;
+    margin-top:670px;
+    margin-left: 22px;
+}
+.eyes06:hover {
+    width: 180px;
+    transform: scale(1.2);
+}
+.eback7 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 700px;
+    border-radius: 10px;
+}   
+.eyes07 {
+    width: 170px;
+    position: absolute;
+    margin-top: 670px;
+    margin-left: 215px;
+}
+.eyes07:hover {
+    width: 200px;
+    margin-left: 205px;
+    margin-top: 660px;
+    transform: scale(1.2);
+}
+.eback8 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 700px;
+    border-radius: 10px;
+
+}   
+.eback9 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 590px;
+    margin-top: 700px;
+    border-radius: 10px;
+
+}   
+.eback10 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 780px;
+    margin-top: 700px;
+    border-radius: 10px;
+}
+/*입*/
+.lback1{
+    background-color:rgb(255, 255, 255) ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 870px;
+    border-radius: 10px;
+}
+.lips01 {
+    width: 230px;
+    position: absolute;
+    margin-top: 775px;
+}
+.lips01:hover {
+    width: 250px;
+    margin-top:765px;
+    transform: scale(1.2);
+}
+
+.lback2 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 870px;
+    border-radius: 10px;
+
+} 
+.lips02 {
+    width: 230px;
+        position: absolute;
+        margin-top: 775px;
+        margin-left: 190px;
+}
+.lips02:hover {
+    width: 350px;
+    margin-top:685px;
+    margin-left: 140px;
+    transform: scale(1.2);
+}
+.lback3 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 870px;
+    border-radius: 10px;
+}   
+.lips03 {
+    width: 230px;
+        position: absolute;
+        margin-top: 775px;
+        margin-left: 375px;
+}
+.lips03:hover {
+    width: 400px;
+    margin-top:650px;
+    margin-left: 310px;
+    transform: scale(1.2);
+}
+
+.lback4 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 590px;
+    margin-top: 870px;
+    border-radius: 10px;
+}   
+.lips04 {
+    width: 230px;
+    position: absolute;
+    margin-top: 775px;
+        margin-left: 570px;
+}
+.lips04:hover {
+    width: 380px;
+    margin-top:670px;
+    margin-left: 510px;
+    transform: scale(1.2);
+}
+.lback5 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 780px;
+    margin-top: 870px;
+    border-radius: 10px;
+}
+.lips05 {
+    width: 230px;
+    position: absolute;
+    margin-top: 775px;
+    margin-left: 760px;
+}
+.lips05:hover {
+    width: 260px;
+    margin-top:750px;
+    margin-left: 745px;
+    transform: scale(1.2);
+}
+.lback6{
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 1040px;
+    border-radius: 10px;
+}
+.lips06 {
+    width: 230px;
+    position: absolute;
+    margin-top: 950px;
+}
+
+.lback7 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 1040px;
+    border-radius: 10px;
+
+}   
+.lback8 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 1040px;
+    border-radius: 10px;
+
+}   
+.lback9 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 590px;
+    margin-top: 1040px;
+    border-radius: 10px;
+
+}   
+.lback10 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 780px;
+    margin-top: 1040px;
+    border-radius: 10px;
+}
+
+    
+
+.bottom01 {
+    width: 200px;
+    position: absolute;
+    margin-top: 1630px;
+}
+.top02 {
+    width: 200px;
+    position: absolute;
+    margin-top: 1230px;
+}
+.top03 {
+    width: 200px;
+    position: absolute;
+    margin-top: 1230px;
+    margin-left: 230px;
+}
+.acc01 {
+    width: 150px;
+    position: absolute;
+    margin-top: 2155px;
+    margin-left: 25px;
+}
+.acc02 {
+    width: 150px;
+    position: absolute;
+    margin-top: 2190px;
+    margin-left: 260px;
+}
+.acc03 {
+    width: 150px;
+    position: absolute;
+    margin-top: 2180px;
+    margin-left: 430px;
+}
+.acc04 {
+    width: 200px;
+    position: absolute;
+    margin-top: 2155px;
+    margin-left: 630px;
+}
