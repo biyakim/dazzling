@@ -45,6 +45,9 @@ const Clothes = () => {
   const [selectedeyebrow, setSelectedeyebrow] = useState(null);
   const [selectedlips, setSelectedlips] = useState(null);
   const [selectedacc, setSelectedacc] = useState(null);
+  const [selectedacc2, setSelectedacc2] = useState(null);
+  const [selectedacc3, setSelectedacc3] = useState(null);
+  const [selectedacc4, setSelectedacc4] = useState(null);
   const [selectedtop, setSelectedtop] = useState(null);
   const [selectedbottom, setSelectedbottom] = useState(null);
 
@@ -57,6 +60,15 @@ const Clothes = () => {
   const handlebottomClick = (clothing) => {setSelectedbottom(clothing);};
   const handleaccClick = (clothing) => {setSelectedacc((prevSelectedacc) =>
     prevSelectedacc === clothing ? null : clothing);};
+  const handleacc2Click = (clothing) => {setSelectedacc2((prevSelectedacc2) =>
+    prevSelectedacc2 === clothing ? null : clothing);};
+
+  const handleacc3Click = (clothing) => {setSelectedacc3((prevSelectedacc3) =>
+    prevSelectedacc3 === clothing ? null : clothing);}
+
+  const handleacc4Click = (clothing) => {setSelectedacc4((prevSelectedacc4) =>
+      prevSelectedacc4 === clothing ? null : clothing);};
+      
 
   return (
     <div>
@@ -319,17 +331,17 @@ const Clothes = () => {
         <img
           className={Clothes2.acc02}
           src={acc02}
-          onClick={() => handleaccClick('acc2')}
+          onClick={() => handleacc2Click('acc2')}
         />
         <img
           className={Clothes2.acc03}
           src={acc03}
-          onClick={() => handleaccClick('acc3')}
+          onClick={() => handleacc3Click('acc3')}
         />
         <img
           className={Clothes2.acc04}
           src={acc04}
-          onClick={() => handleaccClick('acc4')}
+          onClick={() => handleacc4Click('acc4')}
         />
         </div>
       </div>
@@ -422,32 +434,32 @@ const Clothes = () => {
         />
 
       )}
-      {handleaccClick && (
+      {handleacc2Click && (
         <img
           className={Clothes2.body}
           src={
-            selectedacc === 'acc2' ? acc02 :
+            selectedacc2 === 'acc2' ? acc02 :
             // selectedacc === 'acc3' ? acc03 :
             // selectedacc === 'acc4' ? acc04 :
             null}
         />
 
       )}
-      {handleaccClick && (
+      {handleacc3Click && (
         <img
           className={Clothes2.body}
           src={
-            selectedacc === 'acc3' ? acc03 :
+            selectedacc3 === 'acc3' ? acc03 :
             // selectedacc === 'acc4' ? acc04 :
             null}
         />
 
       )}  
-      {handleaccClick && (
+      {handleacc4Click && (
         <img
           className={Clothes2.body}
           src={
-            selectedacc === 'acc4' ? acc04 :
+            selectedacc4 === 'acc4' ? acc04 :
             null}
         />
 
