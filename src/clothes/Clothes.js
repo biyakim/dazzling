@@ -172,6 +172,11 @@ const Clothes = () => {
             <div className={Clothes2.bback3}></div>
             <div className={Clothes2.bback4}></div>
             <div className={Clothes2.bback5}></div>
+            <div className={Clothes2.bback6}></div>
+            <div className={Clothes2.bback7}></div>
+            <div className={Clothes2.bback8}></div>
+            <div className={Clothes2.bback9}></div>
+            <div className={Clothes2.bback10}></div>
 
           {/*eye */}
             <div className={Clothes2.eback1}></div>
@@ -196,7 +201,6 @@ const Clothes = () => {
             <div className={Clothes2.lback8}></div>
             <div className={Clothes2.lback9}></div>
             <div className={Clothes2.lback10}></div>
-
 
         {/* 머리 이미지 누르면 바뀌게 하기 */}
         <img
@@ -378,6 +382,17 @@ const Clothes = () => {
             <div className={Clothes2.tback8}></div>
             <div className={Clothes2.tback9}></div>
             <div className={Clothes2.tback10}></div>
+            {/*accessories */}
+            <div className={Clothes2.aback1}></div>
+            <div className={Clothes2.aback2}></div>
+            <div className={Clothes2.aback3}></div>
+            <div className={Clothes2.aback4}></div>
+            <div className={Clothes2.aback5}></div>
+            <div className={Clothes2.aback6}></div>
+            <div className={Clothes2.aback7}></div>
+            <div className={Clothes2.aback8}></div>
+            <div className={Clothes2.aback9}></div>
+            <div className={Clothes2.aback10}></div>
 
 
         {/* bottom */}
