@@ -21,6 +21,8 @@ import eyebrow01 from '../img/avatar/eyebrow/eyebrow_01.png';
 import eyebrow02 from '../img/avatar/eyebrow/eyebrow_02.png';
 import eyebrow03 from '../img/avatar/eyebrow/eyebrow_03.png';
 import eyebrow04 from '../img/avatar/eyebrow/eyebrow_04.png';
+import eyebrow05 from '../img/avatar/eyebrow/eyebrow_05.png';
+import eyebrow06 from '../img/avatar/eyebrow/eyebrow_06.png';
 //lips
 import lips01 from '../img/avatar/lips/lips_01.png';
 import lips02 from '../img/avatar/lips/lips_02.png';
@@ -195,17 +197,6 @@ const Clothes = () => {
             <div className={Clothes2.lback9}></div>
             <div className={Clothes2.lback10}></div>
 
-          {/*top */}
-            <div className={Clothes2.tback1}></div>
-            <div className={Clothes2.tback2}></div>
-            <div className={Clothes2.tback3}></div>
-            <div className={Clothes2.tback4}></div>
-            <div className={Clothes2.tback5}></div>
-            <div className={Clothes2.tback6}></div>
-            <div className={Clothes2.tback7}></div>
-            <div className={Clothes2.tback8}></div>
-            <div className={Clothes2.tback9}></div>
-            <div className={Clothes2.tback10}></div>
 
         {/* 머리 이미지 누르면 바뀌게 하기 */}
         <img
@@ -245,6 +236,12 @@ const Clothes = () => {
           className={Clothes2.eyebrow04}
           src={eyebrow04}
           onClick={() => handleeyebrowClick('eyebrow4')}
+        />
+        {/* 눈썹 이미지 누르면 바뀌게 하기 */}
+        <img
+          className={Clothes2.eyebrow05}
+          src={eyebrow05}
+          onClick={() => handleeyebrowClick('eyebrow5')}
         />
         {/* 눈 이미지 누르면 바뀌게 하기 */}
         <img
@@ -360,7 +357,7 @@ const Clothes = () => {
         </div>
 
         {/*bottom */}
-        <div className={Clothes2.boback1}></div>
+            <div className={Clothes2.boback1}></div>
             <div className={Clothes2.boback2}></div>
             <div className={Clothes2.boback3}></div>
             <div className={Clothes2.boback4}></div>
