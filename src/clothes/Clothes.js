@@ -16,6 +16,8 @@ import eyes07 from '../img/avatar/eyes/eyes_07.png';
 import hair01 from '../img/avatar/hair/hair_01.png';
 import hair02 from '../img/avatar/hair/hair_02.png';
 import hair03 from '../img/avatar/hair/hair_03.png';
+import hair04 from '../img/avatar/hair/hair_04.png';
+import hair05 from '../img/avatar/hair/hair_05.png';
 //eyebrow
 import eyebrow01 from '../img/avatar/eyebrow/eyebrow_01.png';
 import eyebrow02 from '../img/avatar/eyebrow/eyebrow_02.png';
@@ -218,7 +220,16 @@ const Clothes = () => {
           src={hair03}
           onClick={() => handlehairClick('hair3')}
         />
-
+        <img
+          className={Clothes2.hair04}
+          src={hair04}
+          onClick={() => handlehairClick('hair4')}
+        />
+        <img
+          className={Clothes2.hair05}
+          src={hair05}
+          onClick={() => handlehairClick('hair5')}
+        />
         {/* 눈썹 이미지 누르면 바뀌게 하기 */}
         <img
           className={Clothes2.eyebrow01} src={eyebrow01}
@@ -457,6 +468,8 @@ const Clothes = () => {
             selectedhair === 'hair' ? hair01 :
             selectedhair === 'hair2' ? hair02 :
             selectedhair === 'hair3' ? hair03 :
+            selectedhair === 'hair4' ? hair04 :
+            selectedhair === 'hair5' ? hair05 :
             
             null}
         />
@@ -470,6 +483,7 @@ const Clothes = () => {
             selectedeyebrow === 'eyebrow2' ? eyebrow02 :
             selectedeyebrow === 'eyebrow3' ? eyebrow03 :
             selectedeyebrow === 'eyebrow4' ? eyebrow04 :
+            selectedeyebrow === 'eyebrow5' ? eyebrow05 :
             null}
         />
 
