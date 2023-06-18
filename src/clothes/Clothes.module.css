@@ -112,7 +112,19 @@ body{
     margin-top: 20px;
     border-radius: 10px;
 
-}   
+} 
+.hair04 {
+    width: 130px;
+    position: absolute;
+    margin-left:610px;
+    margin-top: 25px;
+}
+.hair04:hover{
+    width: 120px;
+    margin-top: 40px;
+    margin-left:610px;
+    transform: scale(1.2);
+}  
 .hback5 {
     background-color:white ;
     width: 166px;
@@ -122,7 +134,19 @@ body{
     margin-top: 20px;
     border-radius: 10px;
 
-}   
+} 
+.hair05 {
+    width: 130px;
+    position: absolute;
+    margin-left:795px;
+    margin-top: 25px;
+}
+.hair05:hover{
+    width: 120px;
+    margin-top: 40px;
+    margin-left:795px;
+    transform: scale(1.2);
+}  
 
 .hback6 {
     background-color:white ;
@@ -883,6 +907,12 @@ body{
     margin-top: 710px;
     margin-left: 235px;
 }
+.acc02:hover{
+    width: 130px;
+    margin-top: 710px;
+    margin-left: 235px;
+    transform: scale(1.2);
+}
 .aback3 {
     background-color:white ;
     width: 166px;
@@ -893,12 +923,17 @@ body{
     border-radius: 10px;
 }
 .acc03 {
-    width: 400px;
+    width: 200px;
     position: absolute;
-    margin-top: 515px;
-    margin-left: 200px;
+    margin-top: 650px;
+    margin-left: 345px;
 }
-
+.acc03:hover{
+    width: 250px;
+    margin-top: 625px;
+    margin-left: 300px;
+    transform: scale(1.2);
+}
 .aback4 {
     background-color:white ;
     width: 166px;
@@ -913,6 +948,12 @@ body{
     position: absolute;
     margin-top: 300px;
     margin-left: 450px;
+}
+.acc04:hover{
+    width: 730px;
+    margin-top: 300px;
+    margin-left: 460px;
+    transform: scale(1.2);
 }
 .aback5 {
     background-color:white ;
