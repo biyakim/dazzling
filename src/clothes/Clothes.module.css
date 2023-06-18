@@ -25,16 +25,16 @@ body{
 
 }
 .body{
-    width: 400px;
+    width: 340px;
     position:absolute;
     margin-left: 260px;
-    margin-top: 230px;
+    margin-top: 280px;
 }
 .head {
-    width: 370px;
+    width: 340px;
+    position:absolute;
     margin-left: 260px;
-    margin-top: 255px;
-    position: absolute;
+    margin-top: 280px;
 }
 /*머리*/
 .hback1 {
