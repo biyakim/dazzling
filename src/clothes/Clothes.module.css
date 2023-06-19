@@ -201,7 +201,19 @@ body{
     margin-top: 190px;
     border-radius: 10px;
 
-}   
+} 
+.hair08 {
+    width: 100px;
+    position: absolute;
+    margin-left: 433px;
+    margin-top: 225px;
+}
+.hair08:hover{
+    width: 100px;
+    margin-top: 225px;
+    margin-left:433px;
+    transform: scale(1.2);
+}  
 .hback9 {
     background-color:white ;
     width: 166px;
@@ -212,6 +224,30 @@ body{
     border-radius: 10px;
 
 }   
+.hair09 {
+    width: 100px;
+    position: absolute;
+    margin-left: 620px;
+    margin-top: 210px;
+}
+.hair09:hover{
+    width: 105px;
+    margin-top: 210px;
+    margin-left:620px;
+    transform: scale(1.2);
+}
+.hair07 {
+    width: 100px;
+    position: absolute;
+    margin-left: 243px;
+    margin-top: 198px;
+}
+.hair07:hover{
+    width: 105px;
+    margin-top: 205px;
+    margin-left:234px;
+    transform: scale(1.2);
+}
 .hback10 {
     background-color:white ;
     width: 166px;

@@ -359,6 +359,16 @@ const Clothes = () => {
             src={hair07}
             onClick={() => handlehairClick('hair7')}
           />
+          <img
+            className={Clothes2.hair08}
+            src={hair08}
+            onClick={() => handlehairClick('hair8')}
+          />
+          <img
+            className={Clothes2.hair09}
+            src={hair09}
+            onClick={() => handlehairClick('hair9')}
+          />
           {/* 눈썹 이미지 누르면 바뀌게 하기 */}
           <img
             className={Clothes2.eyebrow01} 
