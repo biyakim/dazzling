@@ -125,7 +125,6 @@ const Clothes = () => {
     setShowElements(false);
   }
 
-
   return (
     <div>
       {/* 로고 이미지 */}
