@@ -43,6 +43,16 @@ import acc02 from '../img/avatar/accessories/acc_02.png';
 import acc03 from '../img/avatar/accessories/acc_03.png';
 import acc04 from '../img/avatar/accessories/acc_04.png';
 
+//lips icon
+import lips_01_icon from '../img/avatar/icon/lips/lips_01_icon.png';
+import lips_02_icon from '../img/avatar/icon/lips/lips_02_icon.png';
+import lips_03_icon from '../img/avatar/icon/lips/lips_03_icon.png';
+import lips_04_icon from '../img/avatar/icon/lips/lips_04_icon.png';
+import lips_05_icon from '../img/avatar/icon/lips/lips_05_icon.png';
+import lips_06_icon from '../img/avatar/icon/lips/lips_06_icon.png';
+import lips_07_icon from '../img/avatar/icon/lips/lips_07_icon.png';
+import lips_08_icon from '../img/avatar/icon/lips/lips_08_icon.png';
+
 const Clothes = () => {
   const [showElements, setShowElements] = useState(false);
   const [selectedeyes, setSelectedeyes] = useState(null);
@@ -298,32 +308,32 @@ const Clothes = () => {
         {/* 입 이미지 누르면 바뀌게 하기 */}
         <img
           className={Clothes2.lips01}
-          src={lips01}
+          src={lips_01_icon}
           onClick={() => handlelipsClick('lips')}
         />
          <img
           className={Clothes2.lips02}
-          src={lips02}
+          src={lips_02_icon}
           onClick={() => handlelipsClick('lips2')}
         />
         <img
           className={Clothes2.lips03}
-          src={lips03}
+          src={lips_03_icon}
           onClick={() => handlelipsClick('lips3')}
         /> 
         <img
           className={Clothes2.lips04}
-          src={lips04}
+          src={lips_04_icon}
           onClick={() => handlelipsClick('lips4')}
         />
         <img
           className={Clothes2.lips05}
-          src={lips05}
+          src={lips_05_icon}
           onClick={() => handlelipsClick('lips5')}
         />
         <img
           className={Clothes2.lips06}
-          src={lips06}
+          src={lips_06_icon}
           onClick={() => handlelipsClick('lips6')}
         />
         </div>
