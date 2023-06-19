@@ -68,10 +68,6 @@ import acc06 from '../img/avatar/accessories/acc_06.png';
 import acc07 from '../img/avatar/accessories/acc_07.png';
 import acc08 from '../img/avatar/accessories/acc_08.png';
 
-//shoes
-import shoes01 from '../img/avatar/clothes/shoes/shoes_01.png';
-import shoes02 from '../img/avatar/clothes/shoes/shoes_02.png';
-
 //lips icon
 import lips_01_icon from '../img/avatar/icon/lips/lips_01_icon.png';
 import lips_02_icon from '../img/avatar/icon/lips/lips_02_icon.png';
@@ -131,6 +127,10 @@ import bottom_06_icon from '../img/avatar/icon/clothes/bottom/bottom_06_icon.png
 import bottom_07_icon from '../img/avatar/icon/clothes/bottom/bottom_07_icon.png';
 import bottom_08_icon from '../img/avatar/icon/clothes/bottom/bottom_08_icon.png';
 import bottom_09_icon from '../img/avatar/icon/clothes/bottom/bottom_09_icon.png';
+
+//shoes icon
+import shoes01 from '../img/avatar/icon/clothes/shoes/shoes_01_icon.png';
+import shoes02 from '../img/avatar/icon/clothes/shoes/shoes_02_icon.png';
 
 
 const Clothes = () => {

@@ -1255,18 +1255,19 @@ body{
     margin-top: 700px;
     border-radius: 10px;
 }
-.acc05 {
-    width: 150px;
+.acc08 {
+    width: 130px;
     position: absolute;
-    margin-top: 885px;
-    margin-left: 415px;
+    margin-top: 710px;
+    margin-left: 795px;
 }
-.acc05:hover{
-    width: 150px;
-    margin-top: 885px;
-    margin-left: 415px;
+.acc08:hover{
+    width: 130px;
+    margin-top: 710px;
+    margin-left: 795px;
     transform: scale(1.2);
 }
+
 .aback6 {
     background-color:white ;
     width: 166px;
@@ -1318,16 +1319,16 @@ body{
     margin-top: 870px;
     border-radius: 10px;
 }
-.acc08 {
-    width: 130px;
+.acc05 {
+    width: 220px;
     position: absolute;
-    margin-top: 710px;
-    margin-left: 795px;
+    margin-top: 835px;
+    margin-left: 385px;
 }
-.acc08:hover{
-    width: 130px;
-    margin-top: 710px;
-    margin-left: 795px;
+.acc05:hover{
+    width: 230px;
+    margin-top: 828px;
+    margin-left: 380px;
     transform: scale(1.2);
 }
 .aback9 {
@@ -1358,14 +1359,14 @@ body{
     border-radius: 10px;
 }
 .shoes01 {
-    width: 150px;
+    width: 140px;
     position: absolute;
-    margin-top: 900px;
-    margin-left: 20px;
+    margin-top: 1040px;
+    margin-left: 30px;
 }
 .shoes01:hover{
-    width: 150px;
-    margin-top: 880px;
+    width: 160px;
+    margin-top: 1030px;
     margin-left: 20px;
     transform: scale(1.2);
 }
@@ -1379,14 +1380,14 @@ body{
     border-radius: 10px;
 }
 .shoes02 {
-    width: 150px;
+    width: 140px;
     position: absolute;
-    margin-top: 900px;
-    margin-left: 215px;
+    margin-top: 1050px;
+    margin-left: 225px;
 }
 .shoes02:hover{
-    width: 150px;
-    margin-top: 880px;
+    width: 160px;
+    margin-top: 1040                                                    px;
     margin-left: 215px;
     transform: scale(1.2);
 }
