@@ -158,6 +158,18 @@ body{
     border-radius: 10px;
 
 }
+.hair06 {
+    width: 110px;
+    position: absolute;
+    margin-left: 42px;
+    margin-top: 198px;
+}
+.hair06:hover{
+    width: 111px;
+    margin-top: 205px;
+    margin-left:40px;
+    transform: scale(1.2);
+} 
 .hback7 {
     background-color:white ;
     width: 166px;
@@ -167,7 +179,19 @@ body{
     margin-top: 190px;
     border-radius: 10px;
 
-}   
+}
+.hair07 {
+    width: 100px;
+    position: absolute;
+    margin-left: 243px;
+    margin-top: 198px;
+}
+.hair07:hover{
+    width: 105px;
+    margin-top: 205px;
+    margin-left:234px;
+    transform: scale(1.2);
+}    
 .hback8 {
     background-color:white ;
     width: 166px;
@@ -491,13 +515,15 @@ body{
     border-radius: 10px;
 }
 .lips01 {
-    width: 230px;
+    width: 150px;
     position: absolute;
-    margin-top: 775px;
+    margin-top: 860px;
+    margin-left: 25px;
 }
 .lips01:hover {
-    width: 250px;
-    margin-top:765px;
+    width: 160px;
+    margin-top:860px;
+    margin-left: 25px;
     transform: scale(1.2);
 }
 
@@ -512,15 +538,15 @@ body{
 
 } 
 .lips02 {
-    width: 230px;
+    width: 150px;
         position: absolute;
-        margin-top: 775px;
-        margin-left: 190px;
+        margin-top: 860px;
+        margin-left: 220px;
 }
 .lips02:hover {
-    width: 350px;
-    margin-top:685px;
-    margin-left: 140px;
+    width: 160px;
+    margin-top:860px;
+    margin-left: 220px;
     transform: scale(1.2);
 }
 .lback3 {
@@ -533,15 +559,15 @@ body{
     border-radius: 10px;
 }   
 .lips03 {
-    width: 230px;
+    width: 130px;
         position: absolute;
-        margin-top: 775px;
-        margin-left: 375px;
+        margin-top: 875px;
+        margin-left: 415px;
 }
 .lips03:hover {
-    width: 400px;
-    margin-top:650px;
-    margin-left: 310px;
+    width: 140px;
+    margin-top:875px;
+    margin-left: 415px;
     transform: scale(1.2);
 }
 
@@ -555,15 +581,15 @@ body{
     border-radius: 10px;
 }   
 .lips04 {
-    width: 230px;
+    width: 150px;
     position: absolute;
-    margin-top: 775px;
-        margin-left: 570px;
+    margin-top: 866px;
+    margin-left: 600px;
 }
 .lips04:hover {
-    width: 380px;
-    margin-top:670px;
-    margin-left: 510px;
+    width: 160px;
+    margin-top:866px;
+    margin-left: 600px;
     transform: scale(1.2);
 }
 .lback5 {
@@ -576,15 +602,15 @@ body{
     border-radius: 10px;
 }
 .lips05 {
-    width: 230px;
+    width: 100px;
     position: absolute;
-    margin-top: 775px;
-    margin-left: 760px;
+    margin-top: 890px;
+    margin-left: 810px;
 }
 .lips05:hover {
-    width: 260px;
-    margin-top:750px;
-    margin-left: 745px;
+    width: 110px;
+    margin-top:890px;
+    margin-left: 810px;
     transform: scale(1.2);
 }
 .lback6{
@@ -597,11 +623,17 @@ body{
     border-radius: 10px;
 }
 .lips06 {
-    width: 230px;
+    width: 150px;
     position: absolute;
-    margin-top: 950px;
+    margin-top: 1035px;
+    margin-left: 25px;
 }
-
+.lips06:hover {
+    width: 160px;
+    margin-top:1035px;
+    margin-left: 25px;
+    transform: scale(1.2);
+}
 .lback7 {
     background-color:white ;
     width: 166px;
@@ -611,6 +643,18 @@ body{
     margin-top: 1040px;
     border-radius: 10px;
 
+}
+.lips07 {
+    width: 150px;
+    position: absolute;
+    margin-top: 1035px;
+    margin-left: 220px;
+}
+.lips07:hover {
+    width: 160px;
+    margin-top:1035px;
+    margin-left: 220px;
+    transform: scale(1.2);
 }   
 .lback8 {
     background-color:white ;
@@ -621,7 +665,19 @@ body{
     margin-top: 1040px;
     border-radius: 10px;
 
-}   
+}
+.lips08 {
+    width: 100px;
+    position: absolute;
+    margin-top: 1065px;
+    margin-left: 425px;
+}
+.lips08:hover {
+    width: 110px;
+    margin-top:1065px;
+    margin-left: 425px;
+    transform: scale(1.2);
+}
 .lback9 {
     background-color:white ;
     width: 166px;
@@ -651,16 +707,28 @@ body{
     margin-top: 20px;
     border-radius: 10px;
 }
-.top02 {
+.top01 {
     width: 230px;
     position: absolute;
     margin-top: -120px;
     margin-left: -10px;
 }
-.top02:hover{
+.top01:hover{
     width: 250px;
     margin-top: -155px;
     margin-left: -20px;
+    transform: scale(1.2);
+}
+.top02 {
+    width: 230px;
+    position: absolute;
+    margin-top: -120px;
+    margin-left:  180px;
+}
+.top02:hover{
+    width: 240px;
+    margin-top: -120px;
+    margin-left: 180px;
     transform: scale(1.2);
 }
 
@@ -677,12 +745,12 @@ body{
     width: 220px;
     position: absolute;
     margin-top: -120px;
-    margin-left: 185px;
+    margin-left: 370px;
 }
 .top03:hover{
-    width: 220px;
+    width: 230px;
     margin-top: -135px;
-    margin-left: 190px;
+    margin-left: 370px;
     transform: scale(1.2);
 }
 
@@ -695,6 +763,18 @@ body{
     margin-top: 20px;
     border-radius: 10px;
 }
+.top04 {
+    width: 220px;
+    position: absolute;
+    margin-top: -120px;
+    margin-left: 560px;
+}
+.top04:hover{
+    width: 230px;
+    margin-top: -130px;
+    margin-left: 560px;
+    transform: scale(1.2);
+}
 .tback4 {
     background-color:white ;
     width: 166px;
@@ -703,6 +783,18 @@ body{
     margin-left: 590px;
     margin-top: 20px;
     border-radius: 10px;
+}
+.top05 {
+    width: 220px;
+    position: absolute;
+    margin-top: -120px;
+    margin-left: 755px;
+}
+.top05:hover{
+    width: 230px;
+    margin-top: -135px;
+    margin-left: 755px;
+    transform: scale(1.2);
 }
 .tback5 {
     background-color:white ;
@@ -713,7 +805,18 @@ body{
     margin-top: 20px;
     border-radius: 10px;
 }
-
+.top06 {
+    width: 220px;
+    position: absolute;
+    margin-top: 56px;
+    margin-left: -10px
+}
+.top06:hover{
+    width: 230px;
+    margin-top: 45px;
+    margin-left: -10px;
+    transform: scale(1.2);
+}
 .tback6 {
     background-color:white ;
     width: 166px;
@@ -723,7 +826,18 @@ body{
     margin-top: 190px;
     border-radius: 10px;
 }
-
+.top07 {
+    width: 220px;
+    position: absolute;
+    margin-top: 56px;
+    margin-left: 185px;
+}
+.top07:hover{
+    width: 230px;
+    margin-top: 45px;
+    margin-left: 185px;
+    transform: scale(1.2);
+}
 .tback7 {
     background-color:white ;
     width: 166px;
@@ -732,6 +846,18 @@ body{
     margin-left: 210px;
     margin-top: 190px;
     border-radius: 10px;
+}
+.top08 {
+    width: 220px;
+    position: absolute;
+    margin-top: 56px;
+    margin-left: 370px;
+}
+.top08:hover{
+    width: 230px;
+    margin-top: 45px;
+    margin-left: 370px;
+    transform: scale(1.2);
 }
 .tback8 {
     background-color:white ;
@@ -793,7 +919,18 @@ body{
     margin-top: 360px;
     border-radius: 10px;
 }
-
+.bottom02 {
+    width: 220px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 185px;
+}
+.bottom02:hover{
+    width: 230px;
+    margin-top: 130px;
+    margin-left: 185px;
+    transform: scale(1.2);
+}
 .boback3 {
     background-color:white ;
     width: 166px;
@@ -802,6 +939,18 @@ body{
     margin-left: 400px;
     margin-top: 360px;
     border-radius: 10px;
+}
+.bottom03 {
+    width: 220px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left:  375px;
+}
+.bottom03:hover{
+    width: 230px;
+    margin-top: 130px;
+    margin-left: 375px;
+    transform: scale(1.2);
 }
 .boback4 {
     background-color:white ;
@@ -812,6 +961,18 @@ body{
     margin-top: 360px;
     border-radius: 10px;
 }
+.bottom04 {
+    width: 220px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 565px;
+}
+.bottom04:hover{
+    width: 230px;
+    margin-top: 130px;
+    margin-left: 565px;
+    transform: scale(1.2);
+}
 .boback5 {
     background-color:white ;
     width: 166px;
@@ -821,7 +982,18 @@ body{
     margin-top: 360px;
     border-radius: 10px;
 }
-
+.bottom05 {
+    width: 220px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 755px;
+}
+.bottom05:hover{
+    width: 230px;
+    margin-top: 130px;
+    margin-left: 755px;
+    transform: scale(1.2);
+}
 .boback6 {
     background-color:white ;
     width: 166px;
@@ -831,7 +1003,18 @@ body{
     margin-top: 530px;
     border-radius: 10px;
 }
-
+.bottom06 {
+    width: 220px;
+    position: absolute;
+    margin-top: 350px;
+    margin-left: -10px;
+}
+.bottom06:hover{
+    width: 230px;
+    margin-top: 320px;
+    margin-left: -10px;
+    transform: scale(1.2);
+}
 .boback7 {
     background-color:white ;
     width: 166px;
@@ -964,6 +1147,18 @@ body{
     margin-top: 700px;
     border-radius: 10px;
 }
+.acc05 {
+    width: 600px;
+    position: absolute;
+    margin-top: 255px;
+    margin-left: 580px;
+}
+.acc05:hover{
+    width: 610px;
+    margin-top: 255px;
+    margin-left: 580px;
+    transform: scale(1.2);
+}
 .aback6 {
     background-color:white ;
     width: 166px;
@@ -973,7 +1168,18 @@ body{
     margin-top: 870px;
     border-radius: 10px;
 }
-
+.acc06 {
+    width: 200px;
+    position: absolute;
+    margin-top: 770px;
+    margin-left: 9px;
+}
+.acc06:hover{
+    width: 210px;
+    margin-top: 770px;
+    margin-left: 9px;
+    transform: scale(1.2);
+}
 .aback7 {
     background-color:white ;
     width: 166px;
