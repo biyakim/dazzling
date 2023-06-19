@@ -737,6 +737,14 @@ body{
     margin-top: 1040px;
     border-radius: 10px;
 }
+.lback11{
+    background-color:rgb(255, 255, 255) ;
+    width: 940px;
+    height: 0.1px;
+    position: absolute;
+    margin-top: 1210px;
+
+}
 /*======상의========================*/
 .tback1 {
     background-color:white ;
@@ -1454,4 +1462,11 @@ body{
     margin-left: 780px;
     margin-top: 1210px;
     border-radius: 10px;
+}
+.sback11{
+    background-color:white ;
+    width: 940px;
+    height: 0.1px;
+    position: absolute;
+    margin-top: 1380px;
 }

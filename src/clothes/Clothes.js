@@ -223,11 +223,11 @@ const Clothes = () => {
       <div className={Clothes2.clothes}
         style={{
           backgroundColor: '#7857DB',
-          width: '1070px',
+          width: '1030px',
           height: '900px',
           position: 'absolute',
           marginLeft: '800px',
-          marginTop: '60px',
+          marginTop: '40px',
           borderRadius: '20px',
           border: "5px solid #5301BF"
         }}
@@ -237,7 +237,7 @@ const Clothes = () => {
           style={{
             backgroundColor: 'rgb(226,218,250)',
             width: '1000px',
-            height: '800px',
+            height: '820px',
             position: 'relative',
             margin: '60px auto',
             borderRadius: '20px',
@@ -257,7 +257,8 @@ const Clothes = () => {
               borderRadius: '10px',
               marginLeft: '310px',
               marginTop: '20px',
-              border: '3px solid #5301BF'
+              border: '3px solid #5301BF',
+              fontSize:'20px'
             }}>MAKE UP</button>
 
           {/*옷 버튼 */}
@@ -273,6 +274,7 @@ const Clothes = () => {
               marginTop: '20px',
               marginBottom: '20px',
               border: '3px solid #5301BF',
+              fontSize:'20px'
             }} onClick={handleClosetButtonClick}> CLOSET</button>
 
           {/*head*/}
@@ -322,6 +324,7 @@ const Clothes = () => {
           <div className={Clothes2.lback8}></div>
           <div className={Clothes2.lback9}></div>
           <div className={Clothes2.lback10}></div>
+          <div className={Clothes2.lback11}></div>
 
           {/* 머리 이미지 누르면 바뀌게 하기 */}
           <img
@@ -502,7 +505,8 @@ const Clothes = () => {
                 borderRadius: '10px',
                 marginLeft: '310px',
                 marginTop: '20px',
-                border: '3px solid #5301BF'
+                border: '3px solid #5301BF',
+                fontSize:'20px'
               }} onClick={handleClosetButton2Click}>MAKE UP</button>
 
             {/*옷 버튼 */}
@@ -518,6 +522,7 @@ const Clothes = () => {
                 marginTop: '20px',
                 marginBottom: '20px',
                 border: '3px solid #5301BF',
+                fontSize:'20px'
               }}> CLOSET</button>
           </div>
 
@@ -566,6 +571,7 @@ const Clothes = () => {
           <div className={Clothes2.sback8}></div>
           <div className={Clothes2.sback9}></div>
           <div className={Clothes2.sback10}></div>
+          <div className={Clothes2.sback11}></div>
 
 
           {/* bottom */}
