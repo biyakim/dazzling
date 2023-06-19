@@ -1250,13 +1250,13 @@ body{
 .acc05 {
     width: 150px;
     position: absolute;
-    margin-top: 700px;
-    margin-left: 790px;
+    margin-top: 885px;
+    margin-left: 415px;
 }
 .acc05:hover{
     width: 150px;
-    margin-top: 700px;
-    margin-left: 790px;
+    margin-top: 885px;
+    margin-left: 415px;
     transform: scale(1.2);
 }
 .aback6 {
@@ -1313,13 +1313,13 @@ body{
 .acc08 {
     width: 130px;
     position: absolute;
-    margin-top: 885px;
-    margin-left: 415px;
+    margin-top: 710px;
+    margin-left: 795px;
 }
 .acc08:hover{
     width: 130px;
-    margin-top: 885px;
-    margin-left: 415px;
+    margin-top: 710px;
+    margin-left: 795px;
     transform: scale(1.2);
 }
 .aback9 {
