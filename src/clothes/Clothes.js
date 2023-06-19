@@ -69,6 +69,42 @@ import lips_06_icon from '../img/avatar/icon/lips/lips_06_icon.png';
 import lips_07_icon from '../img/avatar/icon/lips/lips_07_icon.png';
 import lips_08_icon from '../img/avatar/icon/lips/lips_08_icon.png';
 
+//eyes icon
+import eyes_01_icon from '../img/avatar/icon/eyes/eyes_01_icon.png';
+import eyes_02_icon from '../img/avatar/icon/eyes/eyes_02_icon.png';
+import eyes_03_icon from '../img/avatar/icon/eyes/eyes_03_icon.png';
+import eyes_04_icon from '../img/avatar/icon/eyes/eyes_04_icon.png';
+import eyes_05_icon from '../img/avatar/icon/eyes/eyes_05_icon.png';
+import eyes_06_icon from '../img/avatar/icon/eyes/eyes_06_icon.png';
+import eyes_07_icon from '../img/avatar/icon/eyes/eyes_07_icon.png';
+
+//eyebrow icon
+import eyebrow_01_icon from '../img/avatar/icon/eyebrow/eyebrow_01_icon.png';
+import eyebrow_02_icon from '../img/avatar/icon/eyebrow/eyebrow_02_icon.png';
+import eyebrow_03_icon from '../img/avatar/icon/eyebrow/eyebrow_03_icon.png';
+import eyebrow_04_icon from '../img/avatar/icon/eyebrow/eyebrow_04_icon.png';
+import eyebrow_05_icon from '../img/avatar/icon/eyebrow/eyebrow_05_icon.png';
+import eyebrow_06_icon from '../img/avatar/icon/eyebrow/eyebrow_06_icon.png';
+
+//top icon
+import top_01_icon from '../img/avatar/icon/clothes/top/top_01_icon.png';
+import top_02_icon from '../img/avatar/icon/clothes/top/top_02_icon.png';
+import top_03_icon from '../img/avatar/icon/clothes/top/top_03_icon.png';
+import top_04_icon from '../img/avatar/icon/clothes/top/top_04_icon.png';
+import top_05_icon from '../img/avatar/icon/clothes/top/top_05_icon.png';
+import top_06_icon from '../img/avatar/icon/clothes/top/top_06_icon.png';
+import top_07_icon from '../img/avatar/icon/clothes/top/top_07_icon.png';
+import top_08_icon from '../img/avatar/icon/clothes/top/top_08_icon.png';
+import top_09_icon from '../img/avatar/icon/clothes/top/top_09_icon.png';
+import top_10_icon from '../img/avatar/icon/clothes/top/top_10_icon.png';
+
+//acc icon
+import acc_01_icon from '../img/avatar/icon/acc/acc_01_icon.png';
+import acc_02_icon from '../img/avatar/icon/acc/acc_02_icon.png';
+import acc_03_icon from '../img/avatar/icon/acc/acc_03_icon.png';
+import acc_04_icon from '../img/avatar/icon/acc/acc_04_icon.png';
+
+
 const Clothes = () => {
   const [showElements, setShowElements] = useState(false);
   const [selectedeyes, setSelectedeyes] = useState(null);
@@ -82,6 +118,7 @@ const Clothes = () => {
   const [selectedacc5, setSelectedacc5] = useState(null);
   const [selectedacc6, setSelectedacc6] = useState(null);
   const [selectedtop, setSelectedtop] = useState(null);
+  const [selectedshoes, setSelectedshoes] = useState(null);
   const [selectedbottom, setSelectedbottom] = useState(null);
 
   //이미지 누르면 이미지 바뀌게 하기
@@ -91,6 +128,7 @@ const Clothes = () => {
   const handlelipsClick = (clothing) => { setSelectedlips(clothing); setShowElements(false) };
   const handletopClick = (clothing) => { setSelectedtop(clothing); setShowElements(true); };
   const handlebottomClick = (clothing) => { setSelectedbottom(clothing); setShowElements(true); };
+  const handleshoesClick = (clothing) => { setSelectedshoes(clothing); setShowElements(true); };
   const handleaccClick = (clothing) => {
     setSelectedacc((prevSelectedacc) =>
       prevSelectedacc === clothing ? null : clothing); setShowElements(true);
@@ -285,66 +323,67 @@ const Clothes = () => {
           />
           {/* 눈썹 이미지 누르면 바뀌게 하기 */}
           <img
-            className={Clothes2.eyebrow01} src={eyebrow01}
+            className={Clothes2.eyebrow01} 
+            src={eyebrow_01_icon}
             onClick={() => handleeyebrowClick('eyebrow')}
           />
           <img
             className={Clothes2.eyebrow02}
-            src={eyebrow02}
+            src={eyebrow_02_icon}
             onClick={() => handleeyebrowClick('eyebrow2')}
           />
           {/* 눈썹 이미지 누르면 바뀌게 하기 */}
           <img
             className={Clothes2.eyebrow03}
-            src={eyebrow03}
+            src={eyebrow_03_icon}
             onClick={() => handleeyebrowClick('eyebrow3')}
           />
           {/* 눈썹 이미지 누르면 바뀌게 하기 */}
           <img
             className={Clothes2.eyebrow04}
-            src={eyebrow04}
+            src={eyebrow_04_icon}
             onClick={() => handleeyebrowClick('eyebrow4')}
           />
           {/* 눈썹 이미지 누르면 바뀌게 하기 */}
           <img
             className={Clothes2.eyebrow05}
-            src={eyebrow05}
+            src={eyebrow_05_icon}
             onClick={() => handleeyebrowClick('eyebrow5')}
           />
           {/* 눈 이미지 누르면 바뀌게 하기 */}
           <img
             className={Clothes2.eyes01}
-            src={eyes01}
+            src={eyes_01_icon}
             onClick={() => handleeyesClick('eyes')}
           />
           <img
             className={Clothes2.eyes02}
-            src={eyes02}
+            src={eyes_02_icon}
             onClick={() => handleeyesClick('eyes2')}
           />
           <img
             className={Clothes2.eyes03}
-            src={eyes03}
+            src={eyes_03_icon}
             onClick={() => handleeyesClick('eyes3')}
           />
           <img
             className={Clothes2.eyes04}
-            src={eyes04}
+            src={eyes_04_icon}
             onClick={() => handleeyesClick('eyes4')}
           />
           <img
             className={Clothes2.eyes05}
-            src={eyes05}
+            src={eyes_05_icon}
             onClick={() => handleeyesClick('eyes5')}
           />
           <img
             className={Clothes2.eyes06}
-            src={eyes06}
+            src={eyes_06_icon}
             onClick={() => handleeyesClick('eyes6')}
           />
           <img
             className={Clothes2.eyes07}
-            src={eyes07}
+            src={eyes_07_icon}
             onClick={() => handleeyesClick('eyes7')}
           />
 
@@ -488,7 +527,7 @@ const Clothes = () => {
           <img
             className={Clothes2.bottom04}
             src={bottom04}
-            onClick={() => handlebottomClick('4')}
+            onClick={() => handlebottomClick('bottom4')}
           />
           <img
             className={Clothes2.bottom05}
@@ -503,63 +542,63 @@ const Clothes = () => {
           {/* top */}
           <img
             className={Clothes2.top01}
-            src={top01}
+            src={top_01_icon}
             onClick={() => handletopClick('top')}
           />
           <img
             className={Clothes2.top02}
-            src={top02}
+            src={top_02_icon}
             onClick={() => handletopClick('top2')}
           />
           <img
             className={Clothes2.top03}
-            src={top03}
+            src={top_03_icon}
             onClick={() => handletopClick('top3')}
           />
           <img
             className={Clothes2.top04}
-            src={top04}
+            src={top_04_icon}
             onClick={() => handletopClick('top4')}
           />
           <img
             className={Clothes2.top05}
-            src={top05}
+            src={top_05_icon}
             onClick={() => handletopClick('top5')}
           />
           <img
             className={Clothes2.top06}
-            src={top06}
+            src={top_06_icon}
             onClick={() => handletopClick('top6')}
           />
           <img
             className={Clothes2.top07}
-            src={top07}
+            src={top_07_icon}
             onClick={() => handletopClick('top7')}
           />
           <img
             className={Clothes2.top08}
-            src={top08}
+            src={top_08_icon}
             onClick={() => handletopClick('top8')}
           />
           {/* 악세서리 */}
           <img
             className={Clothes2.acc01}
-            src={acc01}
+            src={acc_01_icon}
             onClick={() => handleaccClick('acc')}
           />
           <img
             className={Clothes2.acc02}
-            src={acc02}
+            src={acc_02_icon}
             onClick={() => handleacc2Click('acc2')}
           />
           <img
             className={Clothes2.acc03}
-            src={acc03}
+            src={acc_03_icon}
             onClick={() => handleacc3Click('acc3')}
           />
           <img
             className={Clothes2.acc04}
-            src={acc04}
+            src={acc_04_icon}
             onClick={() => handleacc4Click('acc4')}
           />
           <img

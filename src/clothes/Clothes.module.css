@@ -708,27 +708,27 @@ body{
     border-radius: 10px;
 }
 .top01 {
-    width: 230px;
+    width: 150px;
     position: absolute;
-    margin-top: -120px;
-    margin-left: -10px;
+    margin-top: 25px;
+    margin-left: 30px;
 }
 .top01:hover{
-    width: 250px;
-    margin-top: -155px;
-    margin-left: -20px;
+    width: 150px;
+    margin-top: 25px;
+    margin-left: 30px;
     transform: scale(1.2);
 }
 .top02 {
-    width: 230px;
+    width: 150px;
     position: absolute;
-    margin-top: -120px;
-    margin-left:  180px;
+    margin-top: 25px;
+    margin-left: 220px;
 }
 .top02:hover{
-    width: 240px;
-    margin-top: -120px;
-    margin-left: 180px;
+    width: 150px;
+    margin-top: 25px;
+    margin-left: 220px;
     transform: scale(1.2);
 }
 
@@ -742,15 +742,15 @@ body{
     border-radius: 10px;
 }
 .top03 {
-    width: 220px;
+    width: 150px;
     position: absolute;
-    margin-top: -120px;
-    margin-left: 370px;
+    margin-top: 25px;
+    margin-left: 410px;
 }
 .top03:hover{
-    width: 230px;
-    margin-top: -135px;
-    margin-left: 370px;
+    width: 150px;
+    margin-top: 25px;
+    margin-left: 410px  ;
     transform: scale(1.2);
 }
 
@@ -764,15 +764,15 @@ body{
     border-radius: 10px;
 }
 .top04 {
-    width: 220px;
+    width: 150px;
     position: absolute;
-    margin-top: -120px;
-    margin-left: 560px;
+    margin-top: 25px;
+    margin-left: 595px;
 }
 .top04:hover{
-    width: 230px;
-    margin-top: -130px;
-    margin-left: 560px;
+    width: 150px;
+    margin-top: 25px;
+    margin-left: 595px;
     transform: scale(1.2);
 }
 .tback4 {
@@ -785,15 +785,15 @@ body{
     border-radius: 10px;
 }
 .top05 {
-    width: 220px;
+    width: 150px;
     position: absolute;
-    margin-top: -120px;
-    margin-left: 755px;
+    margin-top: 25px;
+    margin-left: 785px;
 }
 .top05:hover{
-    width: 230px;
-    margin-top: -135px;
-    margin-left: 755px;
+    width: 150px;
+    margin-top: 25px;
+    margin-left: 785px;
     transform: scale(1.2);
 }
 .tback5 {
@@ -806,15 +806,15 @@ body{
     border-radius: 10px;
 }
 .top06 {
-    width: 220px;
+    width: 150px;
     position: absolute;
-    margin-top: 56px;
-    margin-left: -10px
+    margin-top: 200px;
+    margin-left: 25px;
 }
 .top06:hover{
-    width: 230px;
-    margin-top: 45px;
-    margin-left: -10px;
+    width: 150px;
+    margin-top: 200px;
+    margin-left: 25px;
     transform: scale(1.2);
 }
 .tback6 {
@@ -827,15 +827,15 @@ body{
     border-radius: 10px;
 }
 .top07 {
-    width: 220px;
+    width: 150px;
     position: absolute;
-    margin-top: 56px;
-    margin-left: 185px;
+    margin-top: 200px;
+    margin-left: 215px;
 }
 .top07:hover{
-    width: 230px;
-    margin-top: 45px;
-    margin-left: 185px;
+    width: 150px;
+    margin-top: 200px;
+    margin-left: 215px;
     transform: scale(1.2);
 }
 .tback7 {
@@ -848,15 +848,15 @@ body{
     border-radius: 10px;
 }
 .top08 {
-    width: 220px;
+    width: 150px;
     position: absolute;
-    margin-top: 56px;
-    margin-left: 370px;
+    margin-top: 200px;
+    margin-left: 400px;
 }
 .top08:hover{
-    width: 230px;
-    margin-top: 45px;
-    margin-left: 370px;
+    width: 150px;
+    margin-top: 200px;
+    margin-left: 400px;
     transform: scale(1.2);
 }
 .tback8 {
@@ -1062,15 +1062,15 @@ body{
     border-radius: 10px;
 }
 .acc01 {
-    width: 210px;
+    width: 130px;
     position: absolute;
-    margin-top: 600px;
-    margin-left: 9px;
+    margin-top: 710px;
+    margin-left: 35px;
 }
 .acc01:hover{
-    width: 250px;
-    margin-top: 575px;
-    margin-left: -2px;
+    width: 130px;
+    margin-top: 710px;
+    margin-left: 35px;
     transform: scale(1.2);
 }
 
@@ -1085,15 +1085,15 @@ body{
 }
 
 .acc02 {
-    width: 120px;
+    width: 130px;
     position: absolute;
     margin-top: 710px;
-    margin-left: 235px;
+    margin-left: 230px;
 }
 .acc02:hover{
     width: 130px;
     margin-top: 710px;
-    margin-left: 235px;
+    margin-left: 230px;
     transform: scale(1.2);
 }
 .aback3 {
@@ -1106,15 +1106,15 @@ body{
     border-radius: 10px;
 }
 .acc03 {
-    width: 200px;
+    width: 130px;
     position: absolute;
-    margin-top: 650px;
-    margin-left: 345px;
+    margin-top: 710px;
+    margin-left: 420px;
 }
 .acc03:hover{
-    width: 250px;
-    margin-top: 625px;
-    margin-left: 300px;
+    width: 130px;
+    margin-top: 710px;
+    margin-left: 420px;
     transform: scale(1.2);
 }
 .aback4 {
@@ -1127,15 +1127,15 @@ body{
     border-radius: 10px;
 }
 .acc04 {
-    width: 700px;
+    width: 130px;
     position: absolute;
-    margin-top: 300px;
-    margin-left: 450px;
+    margin-top: 710px;
+    margin-left: 605px;
 }
 .acc04:hover{
-    width: 730px;
-    margin-top: 300px;
-    margin-left: 460px;
+    width: 130px;
+    margin-top: 710px;
+    margin-left: 605px;
     transform: scale(1.2);
 }
 .aback5 {
