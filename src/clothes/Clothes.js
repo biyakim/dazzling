@@ -20,6 +20,8 @@ import hair04 from '../img/avatar/hair/hair_04.png';
 import hair05 from '../img/avatar/hair/hair_05.png';
 import hair06 from '../img/avatar/hair/hair_06.png';
 import hair07 from '../img/avatar/hair/hair_07.png';
+import hair08 from '../img/avatar/hair/hair_08.png';
+import hair09 from '../img/avatar/hair/hair_09.png';
 //eyebrow
 import eyebrow01 from '../img/avatar/eyebrow/eyebrow_01.png';
 import eyebrow02 from '../img/avatar/eyebrow/eyebrow_02.png';
@@ -44,6 +46,8 @@ import top05 from '../img/avatar/clothes/top/top_05.png';
 import top06 from '../img/avatar/clothes/top/top_06.png';
 import top07 from '../img/avatar/clothes/top/top_07.png';
 import top08 from '../img/avatar/clothes/top/top_08.png';
+import top09 from '../img/avatar/clothes/top/top_09.png';
+import top10 from '../img/avatar/clothes/top/top_10.png';
 //bottom
 import bottom01 from '../img/avatar/clothes/bottom/bottom_01.png';
 import bottom02 from '../img/avatar/clothes/bottom/bottom_02.png';
@@ -51,6 +55,9 @@ import bottom03 from '../img/avatar/clothes/bottom/bottom_03.png';
 import bottom04 from '../img/avatar/clothes/bottom/bottom_04.png';
 import bottom05 from '../img/avatar/clothes/bottom/bottom_05.png';
 import bottom06 from '../img/avatar/clothes/bottom/bottom_06.png';
+import bottom07 from '../img/avatar/clothes/bottom/bottom_07.png';
+import bottom08 from '../img/avatar/clothes/bottom/bottom_08.png';
+import bottom09 from '../img/avatar/clothes/bottom/bottom_09.png';
 //acc
 import acc01 from '../img/avatar/accessories/acc_01.png';
 import acc02 from '../img/avatar/accessories/acc_02.png';
@@ -58,6 +65,12 @@ import acc03 from '../img/avatar/accessories/acc_03.png';
 import acc04 from '../img/avatar/accessories/acc_04.png';
 import acc05 from '../img/avatar/accessories/acc_05.png';
 import acc06 from '../img/avatar/accessories/acc_06.png';
+import acc07 from '../img/avatar/accessories/acc_07.png';
+import acc08 from '../img/avatar/accessories/acc_08.png';
+
+//shoes
+import shoes01 from '../img/avatar/clothes/shoes/shoes_01.png';
+import shoes02 from '../img/avatar/clothes/shoes/shoes_02.png';
 
 //lips icon
 import lips_01_icon from '../img/avatar/icon/lips/lips_01_icon.png';
@@ -78,13 +91,13 @@ import eyes_05_icon from '../img/avatar/icon/eyes/eyes_05_icon.png';
 import eyes_06_icon from '../img/avatar/icon/eyes/eyes_06_icon.png';
 import eyes_07_icon from '../img/avatar/icon/eyes/eyes_07_icon.png';
 
+
 //eyebrow icon
 import eyebrow_01_icon from '../img/avatar/icon/eyebrow/eyebrow_01_icon.png';
 import eyebrow_02_icon from '../img/avatar/icon/eyebrow/eyebrow_02_icon.png';
 import eyebrow_03_icon from '../img/avatar/icon/eyebrow/eyebrow_03_icon.png';
 import eyebrow_04_icon from '../img/avatar/icon/eyebrow/eyebrow_04_icon.png';
 import eyebrow_05_icon from '../img/avatar/icon/eyebrow/eyebrow_05_icon.png';
-import eyebrow_06_icon from '../img/avatar/icon/eyebrow/eyebrow_06_icon.png';
 
 //top icon
 import top_01_icon from '../img/avatar/icon/clothes/top/top_01_icon.png';
@@ -103,6 +116,21 @@ import acc_01_icon from '../img/avatar/icon/acc/acc_01_icon.png';
 import acc_02_icon from '../img/avatar/icon/acc/acc_02_icon.png';
 import acc_03_icon from '../img/avatar/icon/acc/acc_03_icon.png';
 import acc_04_icon from '../img/avatar/icon/acc/acc_04_icon.png';
+import acc_05_icon from '../img/avatar/icon/acc/acc_05_icon.png';
+import acc_06_icon from '../img/avatar/icon/acc/acc_06_icon.png';
+import acc_07_icon from '../img/avatar/icon/acc/acc_07_icon.png';
+import acc_08_icon from '../img/avatar/icon/acc/acc_08_icon.png';
+
+//bottom icon
+import bottom_01_icon from '../img/avatar/icon/clothes/bottom/bottom_01_icon.png';
+import bottom_02_icon from '../img/avatar/icon/clothes/bottom/bottom_02_icon.png';
+import bottom_03_icon from '../img/avatar/icon/clothes/bottom/bottom_03_icon.png';
+import bottom_04_icon from '../img/avatar/icon/clothes/bottom/bottom_04_icon.png';
+import bottom_05_icon from '../img/avatar/icon/clothes/bottom/bottom_05_icon.png';
+import bottom_06_icon from '../img/avatar/icon/clothes/bottom/bottom_06_icon.png';
+import bottom_07_icon from '../img/avatar/icon/clothes/bottom/bottom_07_icon.png';
+import bottom_08_icon from '../img/avatar/icon/clothes/bottom/bottom_08_icon.png';
+import bottom_09_icon from '../img/avatar/icon/clothes/bottom/bottom_09_icon.png';
 
 
 const Clothes = () => {
@@ -117,6 +145,8 @@ const Clothes = () => {
   const [selectedacc4, setSelectedacc4] = useState(null);
   const [selectedacc5, setSelectedacc5] = useState(null);
   const [selectedacc6, setSelectedacc6] = useState(null);
+  const [selectedacc7, setSelectedacc7] = useState(null);
+  const [selectedacc8, setSelectedacc8] = useState(null);
   const [selectedtop, setSelectedtop] = useState(null);
   const [selectedshoes, setSelectedshoes] = useState(null);
   const [selectedbottom, setSelectedbottom] = useState(null);
@@ -154,6 +184,14 @@ const Clothes = () => {
   const handleacc6Click = (clothing) => {
     setSelectedacc6((prevSelectedacc6) =>
       prevSelectedacc6 === clothing ? null : clothing); setShowElements(true);
+  };
+  const handleacc7Click = (clothing) => {
+    setSelectedacc7((prevSelectedacc7) =>
+      prevSelectedacc7 === clothing ? null : clothing); setShowElements(true);
+  };
+  const handleacc8Click = (clothing) => {
+    setSelectedacc8((prevSelectedacc8) =>
+      prevSelectedacc8 === clothing ? null : clothing); setShowElements(true);
   };
   const handleClosetButtonClick = () => {
     setShowElements(true);
@@ -507,37 +545,64 @@ const Clothes = () => {
           <div className={Clothes2.aback9}></div>
           <div className={Clothes2.aback10}></div>
 
+          {/*shoes */}
+          <div className={Clothes2.sback1}></div>
+          <div className={Clothes2.sback2}></div>
+          <div className={Clothes2.sback3}></div>
+          <div className={Clothes2.sback4}></div>
+          <div className={Clothes2.sback5}></div>
+          <div className={Clothes2.sback6}></div>
+          <div className={Clothes2.sback7}></div>
+          <div className={Clothes2.sback8}></div>
+          <div className={Clothes2.sback9}></div>
+          <div className={Clothes2.sback10}></div>
+
 
           {/* bottom */}
           <img
             className={Clothes2.bottom01}
-            src={bottom01}
+            src={bottom_01_icon}
             onClick={() => handlebottomClick('bottom')}
           />
           <img
             className={Clothes2.bottom02}
-            src={bottom02}
+            src={bottom_02_icon}
             onClick={() => handlebottomClick('bottom2')}
           />
           <img
             className={Clothes2.bottom03}
-            src={bottom03}
+            src={bottom_03_icon}
             onClick={() => handlebottomClick('bottom3')}
           />
           <img
             className={Clothes2.bottom04}
-            src={bottom04}
+            src={bottom_04_icon}
             onClick={() => handlebottomClick('bottom4')}
           />
           <img
             className={Clothes2.bottom05}
-            src={bottom05}
+            src={bottom_05_icon}
             onClick={() => handlebottomClick('bottom5')}
           />
           <img
             className={Clothes2.bottom06}
-            src={bottom06}
+            src={bottom_06_icon}
             onClick={() => handlebottomClick('bottom6')}
+          />
+          <img
+            className={Clothes2.bottom07}
+            src={bottom_07_icon}
+            onClick={() => handlebottomClick('bottom7')}
+          />
+          <img
+            className={Clothes2.bottom08}
+            src={bottom_08_icon}
+            onClick={() => handlebottomClick('bottom8')}
+          />
+          <img
+            className={Clothes2.bottom09}
+            src={bottom_09_icon}
+            onClick={() => handlebottomClick('bottom9')}
           />
           {/* top */}
           <img
@@ -580,6 +645,16 @@ const Clothes = () => {
             src={top_08_icon}
             onClick={() => handletopClick('top8')}
           />
+           <img
+            className={Clothes2.top09}
+            src={top_09_icon}
+            onClick={() => handletopClick('top9')}
+          />
+          <img
+            className={Clothes2.top10}
+            src={top_10_icon}
+            onClick={() => handletopClick('top10')}
+          />
           {/* 악세서리 */}
           <img
             className={Clothes2.acc01}
@@ -603,13 +678,33 @@ const Clothes = () => {
           />
           <img
             className={Clothes2.acc05}
-            src={acc05}
+            src={acc_05_icon}
             onClick={() => handleacc5Click('acc5')}
           />
           <img
             className={Clothes2.acc06}
-            src={acc06}
+            src={acc_06_icon}
             onClick={() => handleacc6Click('acc6')}
+          />
+           <img
+            className={Clothes2.acc07}
+            src={acc_07_icon}
+            onClick={() => handleacc7Click('acc7')}
+          />
+           <img
+            className={Clothes2.acc08}
+            src={acc_08_icon}
+            onClick={() => handleacc8Click('acc8')}
+          />
+           <img
+            className={Clothes2.shoes01}
+            src={shoes01}
+            onClick={() => handleshoesClick('shoes')}
+          />
+           <img
+            className={Clothes2.shoes02}
+            src={shoes02}
+            onClick={() => handleshoesClick('shoes2')}
           />
         </div>
       </div>
@@ -639,6 +734,8 @@ const Clothes = () => {
                     selectedhair === 'hair5' ? hair05 :
                       selectedhair === 'hair6' ? hair06 :
                         selectedhair === 'hair7' ? hair07 :
+                        selectedhair === 'hair8' ? hair08 :
+                        selectedhair === 'hair9' ? hair09 :
                           null}
         />
       )}
@@ -682,6 +779,9 @@ const Clothes = () => {
                   selectedbottom === 'bottom4' ? bottom04 :
                     selectedbottom === 'bottom5' ? bottom05 :
                       selectedbottom === 'bottom6' ? bottom06 :
+                      selectedbottom === 'bottom7' ? bottom07 :
+                      selectedbottom === 'bottom8' ? bottom08 :
+                      selectedbottom === 'bottom9' ? bottom09 :
                         null}
         />
 
@@ -699,6 +799,8 @@ const Clothes = () => {
                       selectedtop === 'top6' ? top06 :
                         selectedtop === 'top7' ? top07 :
                           selectedtop === 'top8' ? top08 :
+                          selectedtop === 'top9' ? top09 :
+                          selectedtop === 'top10' ? top10 :
                             null}
         />
 
@@ -761,6 +863,33 @@ const Clothes = () => {
           src={
             selectedacc6 === 'acc6' ? acc06 :
               null}
+        />
+
+      )}
+      {handleacc7Click && (
+        <img
+          className={Clothes2.body}
+          src={
+            selectedacc7 === 'acc7' ? acc07 :
+              null}
+        />
+
+      )}
+      {handleacc8Click && (
+        <img
+          className={Clothes2.body}
+          src={
+            selectedacc8 === 'acc8' ? acc08 :
+              null}
+        />
+
+      )}
+      {handleshoesClick && (
+        <img
+          className={Clothes2.head}
+          src={selectedshoes === 'shoes' ? shoes01 :
+            selectedshoes === 'shoes2' ? shoes02 :
+             null}
         />
 
       )}
