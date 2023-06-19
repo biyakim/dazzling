@@ -1340,6 +1340,18 @@ body{
     margin-top: 870px;
     border-radius: 10px;
 }
+.acc09 {
+    width: 130px;
+    position: absolute;
+    margin-top: 880px;
+    margin-left: 605px;
+}
+.acc09:hover{
+    width: 130px;
+    margin-top: 880px;
+    margin-left: 605px;
+    transform: scale(1.2);
+}
 .aback10 {
     background-color:white ;
     width: 166px;
@@ -1348,6 +1360,18 @@ body{
     margin-left: 780px;
     margin-top: 870px;
     border-radius: 10px;
+}
+.acc10 {
+    width: 130px;
+    position: absolute;
+    margin-top: 880px;
+    margin-left: 805px;
+}
+.acc10:hover{
+    width: 130px;
+    margin-top: 880ㅔㅌ;
+    margin-left: 805px;
+    transform: scale(1.2);
 }
 .sback1 {
     background-color:white ;

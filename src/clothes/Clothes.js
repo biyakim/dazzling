@@ -67,6 +67,9 @@ import acc05 from '../img/avatar/accessories/acc_05.png';
 import acc06 from '../img/avatar/accessories/acc_06.png';
 import acc07 from '../img/avatar/accessories/acc_07.png';
 import acc08 from '../img/avatar/accessories/acc_08.png';
+import acc09 from '../img/avatar/accessories/acc_09.png';
+import acc10 from '../img/avatar/accessories/acc_10.png';
+
 
 //lips icon
 import lips_01_icon from '../img/avatar/icon/lips/lips_01_icon.png';
@@ -116,6 +119,8 @@ import acc_05_icon from '../img/avatar/icon/acc/acc_05_icon.png';
 import acc_06_icon from '../img/avatar/icon/acc/acc_06_icon.png';
 import acc_07_icon from '../img/avatar/icon/acc/acc_07_icon.png';
 import acc_08_icon from '../img/avatar/icon/acc/acc_08_icon.png';
+import acc_09_icon from '../img/avatar/icon/acc/acc_09_icon.png';
+import acc_10_icon from '../img/avatar/icon/acc/acc_10_icon.png';
 
 //bottom icon
 import bottom_01_icon from '../img/avatar/icon/clothes/bottom/bottom_01_icon.png';
@@ -145,10 +150,15 @@ import shoes05_icon from '../img/avatar/icon/clothes/shoes/shoes_05_icon.png';
 
 const Clothes = () => {
   const [showElements, setShowElements] = useState(false);
+
   const [selectedeyes, setSelectedeyes] = useState(null);
+
   const [selectedhair, setSelectedhair] = useState(null);
+
   const [selectedeyebrow, setSelectedeyebrow] = useState(null);
+
   const [selectedlips, setSelectedlips] = useState(null);
+
   const [selectedacc, setSelectedacc] = useState(null);
   const [selectedacc2, setSelectedacc2] = useState(null);
   const [selectedacc3, setSelectedacc3] = useState(null);
@@ -157,8 +167,13 @@ const Clothes = () => {
   const [selectedacc6, setSelectedacc6] = useState(null);
   const [selectedacc7, setSelectedacc7] = useState(null);
   const [selectedacc8, setSelectedacc8] = useState(null);
+  const [selectedacc9, setSelectedacc9] = useState(null);
+  const [selectedacc10, setSelectedacc10] = useState(null);
+
   const [selectedtop, setSelectedtop] = useState(null);
+
   const [selectedshoes, setSelectedshoes] = useState(null);
+
   const [selectedbottom, setSelectedbottom] = useState(null);
 
   //이미지 누르면 이미지 바뀌게 하기
@@ -169,47 +184,51 @@ const Clothes = () => {
   const handletopClick = (clothing) => { setSelectedtop(clothing); setShowElements(true); };
   const handlebottomClick = (clothing) => { setSelectedbottom(clothing); setShowElements(true); };
   const handleshoesClick = (clothing) => { setSelectedshoes(clothing); setShowElements(true); };
-  const handleaccClick = (clothing) => {
-    setSelectedacc((prevSelectedacc) =>
-      prevSelectedacc === clothing ? null : clothing); setShowElements(true);
-  };
-  const handleacc2Click = (clothing) => {
-    setSelectedacc2((prevSelectedacc2) =>
-      prevSelectedacc2 === clothing ? null : clothing); setShowElements(true);
-  };
 
-  const handleacc3Click = (clothing) => {
-    setSelectedacc3((prevSelectedacc3) =>
-      prevSelectedacc3 === clothing ? null : clothing); setShowElements(true);
+  const handleaccClick = (clothing) => {setSelectedacc((prevSelectedacc) =>
+      prevSelectedacc === clothing ? null : clothing); 
+      setShowElements(true);
   };
-
-  const handleacc4Click = (clothing) => {
-    setSelectedacc4((prevSelectedacc4) =>
-      prevSelectedacc4 === clothing ? null : clothing); setShowElements(true);
+  const handleacc2Click = (clothing) => {setSelectedacc2((prevSelectedacc2) =>
+      prevSelectedacc2 === clothing ? null : clothing); 
+      setShowElements(true);
   };
-  const handleacc5Click = (clothing) => {
-    setSelectedacc5((prevSelectedacc5) =>
-      prevSelectedacc5 === clothing ? null : clothing); setShowElements(true);
+  const handleacc3Click = (clothing) => {setSelectedacc3((prevSelectedacc3) =>
+      prevSelectedacc3 === clothing ? null : clothing); 
+      setShowElements(true);
   };
-  const handleacc6Click = (clothing) => {
-    setSelectedacc6((prevSelectedacc6) =>
-      prevSelectedacc6 === clothing ? null : clothing); setShowElements(true);
+  const handleacc4Click = (clothing) => {setSelectedacc4((prevSelectedacc4) =>
+      prevSelectedacc4 === clothing ? null : clothing); 
+      setShowElements(true);
   };
-  const handleacc7Click = (clothing) => {
-    setSelectedacc7((prevSelectedacc7) =>
-      prevSelectedacc7 === clothing ? null : clothing); setShowElements(true);
+  const handleacc5Click = (clothing) => {setSelectedacc5((prevSelectedacc5) =>
+      prevSelectedacc5 === clothing ? null : clothing); 
+      setShowElements(true);
   };
-  const handleacc8Click = (clothing) => {
-    setSelectedacc8((prevSelectedacc8) =>
-      prevSelectedacc8 === clothing ? null : clothing); setShowElements(true);
+  const handleacc6Click = (clothing) => {setSelectedacc6((prevSelectedacc6) =>
+      prevSelectedacc6 === clothing ? null : clothing); 
+      setShowElements(true);
   };
-  const handleClosetButtonClick = () => {
-    setShowElements(true);
+  const handleacc7Click = (clothing) => {setSelectedacc7((prevSelectedacc7) =>
+      prevSelectedacc7 === clothing ? null : clothing); 
+      setShowElements(true);
   };
-
-  const handleClosetButton2Click = () => {
-    setShowElements(false);
-  }
+  const handleacc8Click = (clothing) => {setSelectedacc8((prevSelectedacc8) =>
+    prevSelectedacc8 === clothing ? null : clothing);
+       setShowElements(true);
+  };
+  const handleacc9Click = (clothing) => {setSelectedacc9((prevSelectedacc9) =>
+      prevSelectedacc9 === clothing ? null : clothing); 
+      setShowElements(true);
+  };
+  const handleacc10Click = (clothing) => {setSelectedacc10((prevSelectedacc10) =>
+      prevSelectedacc10 === clothing ? null : clothing); 
+      setShowElements(true);
+  };
+  
+  {/*버튼*/}
+  const handleClosetButtonClick = () => {setShowElements(true);};
+  const handleClosetButton2Click = () => {setShowElements(false);}
 
   return (
     <div>
@@ -284,6 +303,7 @@ const Clothes = () => {
             height: '820px',
             position: 'relative',
             marginTop:'10px',
+            marginLeft:'10px',
             borderRadius: '20px',
             overflow: 'auto',
             border: '5px solid #5301BF',
@@ -427,19 +447,16 @@ const Clothes = () => {
             src={eyebrow_02_icon}
             onClick={() => handleeyebrowClick('eyebrow2')}
           />
-          {/* 눈썹 이미지 누르면 바뀌게 하기 */}
           <img
             className={Clothes2.eyebrow03}
             src={eyebrow_03_icon}
             onClick={() => handleeyebrowClick('eyebrow3')}
           />
-          {/* 눈썹 이미지 누르면 바뀌게 하기 */}
           <img
             className={Clothes2.eyebrow04}
             src={eyebrow_04_icon}
             onClick={() => handleeyebrowClick('eyebrow4')}
           />
-          {/* 눈썹 이미지 누르면 바뀌게 하기 */}
           <img
             className={Clothes2.eyebrow05}
             src={eyebrow_05_icon}
@@ -529,15 +546,17 @@ const Clothes = () => {
           style={{
             backgroundColor: 'rgb(226,218,250)',
             width: '1000px',
-            height: '800px',
+            height: '820px',
             position: 'relative',
             margin: '60px auto',
+            marginTop:'10px',
             borderRadius: '20px',
             overflow: 'auto',
             border: '5px solid #5301BF',
             display: showElements ? 'block' : 'none'
           }}
         >
+          
           <div>
             <button type="button" className={Clothes2.clothes}
               style={{
@@ -581,6 +600,7 @@ const Clothes = () => {
           <div className={Clothes2.boback8}></div>
           <div className={Clothes2.boback9}></div>
           <div className={Clothes2.boback10}></div>
+          
           {/* top */}
           <div className={Clothes2.tback1}></div>
           <div className={Clothes2.tback2}></div>
@@ -592,6 +612,7 @@ const Clothes = () => {
           <div className={Clothes2.tback8}></div>
           <div className={Clothes2.tback9}></div>
           <div className={Clothes2.tback10}></div>
+
           {/*accessories */}
           <div className={Clothes2.aback1}></div>
           <div className={Clothes2.aback2}></div>
@@ -756,6 +777,16 @@ const Clothes = () => {
             src={acc_08_icon}
             onClick={() => handleacc8Click('acc8')}
           />
+          <img
+            className={Clothes2.acc09}
+            src={acc_09_icon}
+            onClick={() => handleacc9Click('acc9')}
+          />
+          <img
+            className={Clothes2.acc10}
+            src={acc_10_icon}
+            onClick={() => handleacc10Click('acc10')}
+          />
           {/*신발 */}
            <img
             className={Clothes2.shoes01}
@@ -784,35 +815,35 @@ const Clothes = () => {
           />
         </div>
       </div>
-      {/* 이미지 누르면 head이미제 입혀지고 null이면 없어지게 하기 */}
-      {handleeyesClick && (
+    {/* 이미지 누르면 head이미제 입혀지고 null이면 없어지게 하기 */}
+    {handleeyesClick && (
         <img
           className={Clothes2.head}
           src={selectedeyes === 'eyes' ? eyes01 :
             selectedeyes === 'eyes2' ? eyes02 :
-              selectedeyes === 'eyes3' ? eyes03 :
-                selectedeyes === 'eyes4' ? eyes04 :
-                  selectedeyes === 'eyes5' ? eyes05 :
-                    selectedeyes === 'eyes6' ? eyes06 :
-                      selectedeyes === 'eyes7' ? eyes07 :
-                        null}
+            selectedeyes === 'eyes3' ? eyes03 :
+            selectedeyes === 'eyes4' ? eyes04 :
+            selectedeyes === 'eyes5' ? eyes05 :
+            selectedeyes === 'eyes6' ? eyes06 :
+            selectedeyes === 'eyes7' ? eyes07 :
+          null}
         />
-
       )}
+
       {handlehairClick && (
         <img
           className={Clothes2.head}
           src={
             selectedhair === 'hair' ? hair01 :
-              selectedhair === 'hair2' ? hair02 :
-                selectedhair === 'hair3' ? hair03 :
-                  selectedhair === 'hair4' ? hair04 :
-                    selectedhair === 'hair5' ? hair05 :
-                      selectedhair === 'hair6' ? hair06 :
-                        selectedhair === 'hair7' ? hair07 :
-                        selectedhair === 'hair8' ? hair08 :
-                        selectedhair === 'hair9' ? hair09 :
-                          null}
+            selectedhair === 'hair2' ? hair02 :
+            selectedhair === 'hair3' ? hair03 :
+            selectedhair === 'hair4' ? hair04 :
+            selectedhair === 'hair5' ? hair05 :
+            selectedhair === 'hair6' ? hair06 :
+            selectedhair === 'hair7' ? hair07 :
+            selectedhair === 'hair8' ? hair08 :
+            selectedhair === 'hair9' ? hair09 :
+          null}
         />
       )}
 
@@ -821,27 +852,27 @@ const Clothes = () => {
           className={Clothes2.head}
           src={
             selectedeyebrow === 'eyebrow' ? eyebrow01 :
-              selectedeyebrow === 'eyebrow2' ? eyebrow02 :
-                selectedeyebrow === 'eyebrow3' ? eyebrow03 :
-                  selectedeyebrow === 'eyebrow4' ? eyebrow04 :
-                    selectedeyebrow === 'eyebrow5' ? eyebrow05 :
-                      null}
+            selectedeyebrow === 'eyebrow2' ? eyebrow02 :
+            selectedeyebrow === 'eyebrow3' ? eyebrow03 :
+            selectedeyebrow === 'eyebrow4' ? eyebrow04 :
+            selectedeyebrow === 'eyebrow5' ? eyebrow05 :
+          null}
         />
-
       )}
+
       {handlelipsClick && (
         <img
           className={Clothes2.head}
           src={
             selectedlips === 'lips' ? lips01 :
-              selectedlips === 'lips2' ? lips02 :
-                selectedlips === 'lips3' ? lips03 :
-                  selectedlips === 'lips4' ? lips04 :
-                    selectedlips === 'lips5' ? lips05 :
-                      selectedlips === 'lips6' ? lips06 :
-                        selectedlips === 'lips7' ? lips07 :
-                          selectedlips === 'lips8' ? lips08 :
-                            null}
+            selectedlips === 'lips2' ? lips02 :
+            selectedlips === 'lips3' ? lips03 :
+            selectedlips === 'lips4' ? lips04 :
+            selectedlips === 'lips5' ? lips05 :
+            selectedlips === 'lips6' ? lips06 :
+            selectedlips === 'lips7' ? lips07 :
+            selectedlips === 'lips8' ? lips08 :
+          null}
         />
       )}
 
@@ -850,17 +881,16 @@ const Clothes = () => {
           className={Clothes2.body}
           src={
             selectedbottom === 'bottom' ? bottom01 :
-              selectedbottom === 'bottom2' ? bottom02 :
-                selectedbottom === 'bottom3' ? bottom03 :
-                  selectedbottom === 'bottom4' ? bottom04 :
-                    selectedbottom === 'bottom5' ? bottom05 :
-                      selectedbottom === 'bottom6' ? bottom06 :
-                      selectedbottom === 'bottom7' ? bottom07 :
-                      selectedbottom === 'bottom8' ? bottom08 :
-                      selectedbottom === 'bottom9' ? bottom09 :
-                        null}
+            selectedbottom === 'bottom2' ? bottom02 :
+            selectedbottom === 'bottom3' ? bottom03 :
+            selectedbottom === 'bottom4' ? bottom04 :
+            selectedbottom === 'bottom5' ? bottom05 :
+            selectedbottom === 'bottom6' ? bottom06 :
+            selectedbottom === 'bottom7' ? bottom07 :
+            selectedbottom === 'bottom8' ? bottom08 :
+            selectedbottom === 'bottom9' ? bottom09 :
+          null}
         />
-
       )}
 
       {handletopClick && (
@@ -868,109 +898,61 @@ const Clothes = () => {
           className={Clothes2.body}
           src={
             selectedtop === 'top' ? top01 :
-              selectedtop === 'top2' ? top02 :
-                selectedtop === 'top3' ? top03 :
-                  selectedtop === 'top4' ? top04 :
-                    selectedtop === 'top5' ? top05 :
-                      selectedtop === 'top6' ? top06 :
-                        selectedtop === 'top7' ? top07 :
-                          selectedtop === 'top8' ? top08 :
-                          selectedtop === 'top9' ? top09 :
-                          selectedtop === 'top10' ? top10 :
-                            null}
+            selectedtop === 'top2' ? top02 :
+            selectedtop === 'top3' ? top03 :
+            selectedtop === 'top4' ? top04 :
+            selectedtop === 'top5' ? top05 :
+            selectedtop === 'top6' ? top06 :
+            selectedtop === 'top7' ? top07 :
+            selectedtop === 'top8' ? top08 :
+            selectedtop === 'top9' ? top09 :
+            selectedtop === 'top10' ? top10 :
+            null}
         />
-
       )}
 
       {handleaccClick && (
-        <img
-          className={Clothes2.body}
-          src={
-            selectedacc === 'acc' ? acc01 :
-              // selectedacc === 'acc2' ? acc02 :
-              // selectedacc === 'acc3' ? acc03 :
-              // selectedacc === 'acc4' ? acc04 :
-              null}
-        />
-
+        <img className={Clothes2.body} src={selectedacc === 'acc1' ? acc01 :null}/>
       )}
       {handleacc2Click && (
-        <img
-          className={Clothes2.body}
-          src={
-            selectedacc2 === 'acc2' ? acc02 :
-              // selectedacc === 'acc3' ? acc03 :
-              // selectedacc === 'acc4' ? acc04 :
-              null}
-        />
-
+        <img className={Clothes2.body} src={selectedacc2 === 'acc2' ? acc02 :null}/>
       )}
       {handleacc3Click && (
-        <img
-          className={Clothes2.body}
-          src={
-            selectedacc3 === 'acc3' ? acc03 :
-              // selectedacc === 'acc4' ? acc04 :
-              null}
-        />
-
+        <img className={Clothes2.body} src={selectedacc3 === 'acc3' ? acc03 :null}/>
       )}
       {handleacc4Click && (
-        <img
-          className={Clothes2.body}
-          src={
-            selectedacc4 === 'acc4' ? acc04 :
-              null}
-        />
-
+        <img className={Clothes2.body} src={selectedacc4 === 'acc4' ? acc04 :null}/>
       )}
       {handleacc5Click && (
-        <img
-          className={Clothes2.body}
-          src={
-            selectedacc5 === 'acc5' ? acc05 :
-              null}
-        />
-
+        <img className={Clothes2.body} src={selectedacc5 === 'acc5' ? acc05 :null}/>
       )}
       {handleacc6Click && (
-        <img
-          className={Clothes2.body}
-          src={
-            selectedacc6 === 'acc6' ? acc06 :
-              null}
-        />
-
+        <img className={Clothes2.body} src={selectedacc6 === 'acc6' ? acc06 :null}/>
       )}
       {handleacc7Click && (
-        <img
-          className={Clothes2.body}
-          src={
-            selectedacc7 === 'acc7' ? acc07 :
-              null}
-        />
-
+        <img className={Clothes2.body} src={selectedacc7 === 'acc7' ? acc07 :null}/>
       )}
       {handleacc8Click && (
-        <img
-          className={Clothes2.body}
-          src={
-            selectedacc8 === 'acc8' ? acc08 :
-              null}
-        />
-
+        <img className={Clothes2.body} src={selectedacc8 === 'acc8' ? acc08 :null}/>
       )}
+      {handleacc9Click && (
+        <img className={Clothes2.body} src={selectedacc9 === 'acc9' ? acc09 :null}/>
+      )}
+      {handleacc10Click && (
+        <img className={Clothes2.body} src={selectedacc10 === 'acc10' ? acc10 :null}/>
+      )}
+
       {handleshoesClick && (
         <img
           className={Clothes2.head}
-          src={selectedshoes === 'shoes' ? shoes01 :
+          src={
+            selectedshoes === 'shoes' ? shoes01 :
             selectedshoes === 'shoes2' ? shoes02 :
-            selectedshoes === 'shoes3' ? shoes02 :
-            selectedshoes === 'shoes4' ? shoes02 :
-            selectedshoes === 'shoes5' ? shoes02 :
-             null}
+            selectedshoes === 'shoes3' ? shoes03 :
+            selectedshoes === 'shoes4' ? shoes04 :
+            selectedshoes === 'shoes5' ? shoes05 :
+            null}
         />
-
       )}
     </div>
   );
