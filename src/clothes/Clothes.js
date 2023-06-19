@@ -24,7 +24,6 @@ import eyebrow02 from '../img/avatar/eyebrow/eyebrow_02.png';
 import eyebrow03 from '../img/avatar/eyebrow/eyebrow_03.png';
 import eyebrow04 from '../img/avatar/eyebrow/eyebrow_04.png';
 import eyebrow05 from '../img/avatar/eyebrow/eyebrow_05.png';
-import eyebrow06 from '../img/avatar/eyebrow/eyebrow_06.png';
 //lips
 import lips01 from '../img/avatar/lips/lips_01.png';
 import lips02 from '../img/avatar/lips/lips_02.png';
@@ -32,6 +31,8 @@ import lips03 from '../img/avatar/lips/lips_03.png';
 import lips04 from '../img/avatar/lips/lips_04.png';
 import lips05 from '../img/avatar/lips/lips_05.png';
 import lips06 from '../img/avatar/lips/lips_06.png';
+import lips07 from '../img/avatar/lips/lips_07.png';
+import lips08 from '../img/avatar/lips/lips_08.png';
 //top
 import top02 from '../img/avatar/clothes/top/top_02.png';
 import top03 from '../img/avatar/clothes/top/top_03.png';
@@ -89,7 +90,7 @@ const Clothes = () => {
     
   const handleClosetButton2Click = () => {
         setShowElements(false);
-  }
+  };
       
 
   return (
