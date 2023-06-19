@@ -912,7 +912,7 @@ const Clothes = () => {
       )}
 
       {handleaccClick && (
-        <img className={Clothes2.body} src={selectedacc === 'acc1' ? acc01 :null}/>
+        <img className={Clothes2.body} src={selectedacc === 'acc' ? acc01 :null}/>
       )}
       {handleacc2Click && (
         <img className={Clothes2.body} src={selectedacc2 === 'acc2' ? acc02 :null}/>
