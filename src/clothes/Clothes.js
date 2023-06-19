@@ -787,7 +787,7 @@ const Clothes = () => {
             src={acc_10_icon}
             onClick={() => handleacc10Click('acc10')}
           />
-          {/*신발 */}
+          {/*신발*/}
            <img
             className={Clothes2.shoes01}
             src={shoes01_icon}
