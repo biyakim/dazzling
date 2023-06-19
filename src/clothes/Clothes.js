@@ -131,10 +131,16 @@ import bottom_09_icon from '../img/avatar/icon/clothes/bottom/bottom_09_icon.png
 //shoes
 import shoes01 from '../img/avatar/clothes/shoes/shoes_01.png';
 import shoes02 from '../img/avatar/clothes/shoes/shoes_02.png';
+import shoes03 from '../img/avatar/clothes/shoes/shoes_03.png';
+import shoes04 from '../img/avatar/clothes/shoes/shoes_04.png';
+import shoes05 from '../img/avatar/clothes/shoes/shoes_05.png';
 
 //shoes icon
 import shoes01_icon from '../img/avatar/icon/clothes/shoes/shoes_01_icon.png';
 import shoes02_icon from '../img/avatar/icon/clothes/shoes/shoes_02_icon.png';
+import shoes03_icon from '../img/avatar/icon/clothes/shoes/shoes_03_icon.png';
+import shoes04_icon from '../img/avatar/icon/clothes/shoes/shoes_04_icon.png';
+import shoes05_icon from '../img/avatar/icon/clothes/shoes/shoes_05_icon.png';
 
 
 const Clothes = () => {
