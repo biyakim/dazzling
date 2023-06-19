@@ -242,6 +242,40 @@ const Clothes = () => {
           border: "5px solid #5301BF"
         }}
       >
+        {/*옷장 x버튼*/}
+        <div style={{
+          width:'50px',
+          height:'30px',
+          marginTop:'10px',
+          marginLeft:'780px',
+          marginBottom:'10px',
+          backgroundColor:'rgb(255,158,200)',
+          borderRadius: '5px',
+          border: "3px solid rgb(189,3,88)"
+        }}>_
+        <div style={{
+          width:'50px',
+          height:'30px',
+          marginLeft:'70px',
+          marginBottom:'10px',
+          marginTop:'-24px',
+          backgroundColor:'rgb(255,158,200)',
+          borderRadius: '5px',
+          border: "3px solid rgb(189,3,88)"
+        }}>ㅁ
+        <div style={{
+          width:'50px',
+          height:'30px',
+          marginLeft:'70px',
+          marginBottom:'10px',
+          backgroundColor:'rgb(255,158,200)',
+          borderRadius: '5px',
+          marginTop:'-25px',
+          border: "3px solid rgb(189,3,88)"
+        }}>x
+        </div>
+        </div>
+        </div>
         <div
           className={Clothes2.Clothes5}
           style={{
@@ -249,7 +283,7 @@ const Clothes = () => {
             width: '1000px',
             height: '820px',
             position: 'relative',
-            margin: '60px auto',
+            marginTop:'10px',
             borderRadius: '20px',
             overflow: 'auto',
             border: '5px solid #5301BF',
