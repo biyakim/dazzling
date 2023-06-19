@@ -1387,7 +1387,7 @@ body{
 }
 .shoes02:hover{
     width: 160px;
-    margin-top: 1040                                                    px;
+    margin-top: 1040px;
     margin-left: 215px;
     transform: scale(1.2);
 }
@@ -1400,6 +1400,18 @@ body{
     margin-top: 1040px;
     border-radius: 10px;
 }
+.shoes03 {
+    width: 130px;
+    position: absolute;
+    margin-top: 1050px;
+    margin-left: 420px;
+}
+.shoes03:hover{
+    width: 150px;
+    margin-top: 1040px;
+    margin-left: 410px;
+    transform: scale(1.2);
+}
 .sback4 {
     background-color:white ;
     width: 166px;
@@ -1408,6 +1420,18 @@ body{
     margin-left: 590px;
     margin-top: 1040px;
     border-radius: 10px;
+}
+.shoes04 {
+    width: 140px;
+    position: absolute;
+    margin-top: 1025px;
+    margin-left: 605px;
+}
+.shoes04:hover{
+    width: 150px;
+    margin-top: 1015px;
+    margin-left: 600px;
+    transform: scale(1.2);
 }
 
 .sback5 {
@@ -1418,6 +1442,18 @@ body{
     margin-left: 780px;
     margin-top: 1040px;
     border-radius: 10px;
+}
+.shoes05 {
+    width: 140px;
+    position: absolute;
+    margin-top: 1030px;
+    margin-left: 795px;
+}
+.shoes05:hover{
+    width: 160px;
+    margin-top: 1010px;
+    margin-left: 785px;
+    transform: scale(1.2);
 }
 .sback6 {
     background-color:white ;

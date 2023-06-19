@@ -756,6 +756,7 @@ const Clothes = () => {
             src={acc_08_icon}
             onClick={() => handleacc8Click('acc8')}
           />
+          {/*신발 */}
            <img
             className={Clothes2.shoes01}
             src={shoes01_icon}
@@ -765,6 +766,21 @@ const Clothes = () => {
             className={Clothes2.shoes02}
             src={shoes02_icon}
             onClick={() => handleshoesClick('shoes2')}
+          />
+           <img
+            className={Clothes2.shoes03}
+            src={shoes03_icon}
+            onClick={() => handleshoesClick('shoes3')}
+          />
+           <img
+            className={Clothes2.shoes04}
+            src={shoes04_icon}
+            onClick={() => handleshoesClick('shoes4')}
+          />
+           <img
+            className={Clothes2.shoes05}
+            src={shoes05_icon}
+            onClick={() => handleshoesClick('shoes5')}
           />
         </div>
       </div>
@@ -949,6 +965,9 @@ const Clothes = () => {
           className={Clothes2.head}
           src={selectedshoes === 'shoes' ? shoes01 :
             selectedshoes === 'shoes2' ? shoes02 :
+            selectedshoes === 'shoes3' ? shoes02 :
+            selectedshoes === 'shoes4' ? shoes02 :
+            selectedshoes === 'shoes5' ? shoes02 :
              null}
         />
 
