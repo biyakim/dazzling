@@ -128,9 +128,13 @@ import bottom_07_icon from '../img/avatar/icon/clothes/bottom/bottom_07_icon.png
 import bottom_08_icon from '../img/avatar/icon/clothes/bottom/bottom_08_icon.png';
 import bottom_09_icon from '../img/avatar/icon/clothes/bottom/bottom_09_icon.png';
 
+//shoes
+import shoes01 from '../img/avatar/clothes/shoes/shoes_01.png';
+import shoes02 from '../img/avatar/clothes/shoes/shoes_02.png';
+
 //shoes icon
-import shoes01 from '../img/avatar/icon/clothes/shoes/shoes_01_icon.png';
-import shoes02 from '../img/avatar/icon/clothes/shoes/shoes_02_icon.png';
+import shoes01_icon from '../img/avatar/icon/clothes/shoes/shoes_01_icon.png';
+import shoes02_icon from '../img/avatar/icon/clothes/shoes/shoes_02_icon.png';
 
 
 const Clothes = () => {
@@ -714,12 +718,12 @@ const Clothes = () => {
           />
            <img
             className={Clothes2.shoes01}
-            src={shoes01}
+            src={shoes01_icon}
             onClick={() => handleshoesClick('shoes')}
           />
            <img
             className={Clothes2.shoes02}
-            src={shoes02}
+            src={shoes02_icon}
             onClick={() => handleshoesClick('shoes2')}
           />
         </div>
