@@ -227,7 +227,7 @@ const Clothes = () => {
           height: '900px',
           position: 'absolute',
           marginLeft: '800px',
-          marginTop: '40px',
+          marginTop: '20px',
           borderRadius: '20px',
           border: "5px solid #5301BF"
         }}
@@ -247,7 +247,7 @@ const Clothes = () => {
           }}
         >
           {/*얼굴 버튼 */}
-          <button
+          <button id='face'
             style={{
               width: '160px',
               height: '60px',
