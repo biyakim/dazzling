@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useHistory } from 'react-router-dom';
 import main02 from '../img/main_02.png';
 import Clothes2 from './Clothes.module.css';
 import head from '../img/avatar/head.png';
 import body from '../img/avatar/body.png';
 import Clothes01 from '../img/clothes_01.png';
+import html2canvas from 'html2canvas';
+import domtoimage from 'dom-to-image';
+import { saveAs } from 'file-saver';
 //eyes
 import eyes01 from '../img/avatar/eyes/eyes_01.png';
 import eyes02 from '../img/avatar/eyes/eyes_02.png';
@@ -13,6 +16,9 @@ import eyes04 from '../img/avatar/eyes/eyes_04.png';
 import eyes05 from '../img/avatar/eyes/eyes_05.png';
 import eyes06 from '../img/avatar/eyes/eyes_06.png';
 import eyes07 from '../img/avatar/eyes/eyes_07.png';
+import eyes08 from '../img/avatar/eyes/eyes_08.png';
+import eyes09 from '../img/avatar/eyes/eyes_09.png';
+import eyes10 from '../img/avatar/eyes/eyes_10.png';
 //hair
 import hair01 from '../img/avatar/hair/hair_01.png';
 import hair02 from '../img/avatar/hair/hair_02.png';
@@ -23,6 +29,7 @@ import hair06 from '../img/avatar/hair/hair_06.png';
 import hair07 from '../img/avatar/hair/hair_07.png';
 import hair08 from '../img/avatar/hair/hair_08.png';
 import hair09 from '../img/avatar/hair/hair_09.png';
+import hair10 from '../img/avatar/hair/hair_10.png';
 //eyebrow
 import eyebrow01 from '../img/avatar/eyebrow/eyebrow_01.png';
 import eyebrow02 from '../img/avatar/eyebrow/eyebrow_02.png';
@@ -38,6 +45,8 @@ import lips05 from '../img/avatar/lips/lips_05.png';
 import lips06 from '../img/avatar/lips/lips_06.png';
 import lips07 from '../img/avatar/lips/lips_07.png';
 import lips08 from '../img/avatar/lips/lips_08.png';
+import lips09 from '../img/avatar/lips/lips_09.png';
+import lips10 from '../img/avatar/lips/lips_10.png';
 //top
 import top01 from '../img/avatar/clothes/top/top_01.png';
 import top02 from '../img/avatar/clothes/top/top_02.png';
@@ -49,6 +58,7 @@ import top07 from '../img/avatar/clothes/top/top_07.png';
 import top08 from '../img/avatar/clothes/top/top_08.png';
 import top09 from '../img/avatar/clothes/top/top_09.png';
 import top10 from '../img/avatar/clothes/top/top_10.png';
+import top11 from '../img/avatar/clothes/top/top_11.png';
 //bottom
 import bottom01 from '../img/avatar/clothes/bottom/bottom_01.png';
 import bottom02 from '../img/avatar/clothes/bottom/bottom_02.png';
@@ -72,6 +82,7 @@ import acc07 from '../img/avatar/accessories/acc_07.png';
 import acc08 from '../img/avatar/accessories/acc_08.png';
 import acc09 from '../img/avatar/accessories/acc_09.png';
 import acc10 from '../img/avatar/accessories/acc_10.png';
+import acc11 from '../img/avatar/accessories/acc_11.png';
 
 
 //lips icon
@@ -83,6 +94,8 @@ import lips_05_icon from '../img/avatar/icon/lips/lips_05_icon.png';
 import lips_06_icon from '../img/avatar/icon/lips/lips_06_icon.png';
 import lips_07_icon from '../img/avatar/icon/lips/lips_07_icon.png';
 import lips_08_icon from '../img/avatar/icon/lips/lips_08_icon.png';
+import lips_09_icon from '../img/avatar/icon/lips/lips_09_icon.png';
+import lips_10_icon from '../img/avatar/icon/lips/lips_10_icon.png';
 
 //eyes icon
 import eyes_01_icon from '../img/avatar/icon/eyes/eyes_01_icon.png';
@@ -92,6 +105,9 @@ import eyes_04_icon from '../img/avatar/icon/eyes/eyes_04_icon.png';
 import eyes_05_icon from '../img/avatar/icon/eyes/eyes_05_icon.png';
 import eyes_06_icon from '../img/avatar/icon/eyes/eyes_06_icon.png';
 import eyes_07_icon from '../img/avatar/icon/eyes/eyes_07_icon.png';
+import eyes_08_icon from '../img/avatar/icon/eyes/eyes_08_icon.png';
+import eyes_09_icon from '../img/avatar/icon/eyes/eyes_09_icon.png';
+import eyes_10_icon from '../img/avatar/icon/eyes/eyes_10_icon.png';
 
 
 //eyebrow icon
@@ -112,6 +128,7 @@ import top_07_icon from '../img/avatar/icon/clothes/top/top_07_icon.png';
 import top_08_icon from '../img/avatar/icon/clothes/top/top_08_icon.png';
 import top_09_icon from '../img/avatar/icon/clothes/top/top_09_icon.png';
 import top_10_icon from '../img/avatar/icon/clothes/top/top_10_icon.png';
+import top_11_icon from '../img/avatar/icon/clothes/top/top_11_icon.png';
 
 //acc icon
 import acc_01_icon from '../img/avatar/icon/acc/acc_01_icon.png';
@@ -124,6 +141,7 @@ import acc_07_icon from '../img/avatar/icon/acc/acc_07_icon.png';
 import acc_08_icon from '../img/avatar/icon/acc/acc_08_icon.png';
 import acc_09_icon from '../img/avatar/icon/acc/acc_09_icon.png';
 import acc_10_icon from '../img/avatar/icon/acc/acc_10_icon.png';
+import acc_11_icon from '../img/avatar/icon/acc/acc_11_icon.png';
 
 //bottom icon
 import bottom_01_icon from '../img/avatar/icon/clothes/bottom/bottom_01_icon.png';
@@ -190,6 +208,7 @@ const Clothes = () => {
   const handletopClick = (clothing) => { setSelectedtop(clothing); setShowElements(true); };
   const handlebottomClick = (clothing) => { setSelectedbottom(clothing); setShowElements(true); };
   const handleshoesClick = (clothing) => { setSelectedshoes(clothing); setShowElements(true); };
+  const [savedImage, setSavedImage] = useState(null);
 
   const handleaccClick = (clothing) => {setSelectedacc((prevSelectedacc) =>
       prevSelectedacc === clothing ? null : clothing); 
@@ -234,9 +253,13 @@ const Clothes = () => {
   
   {/*버튼*/}
   const handleClosetButtonClick = () => {setShowElements(true);};
+
   const handleClosetButton2Click = () => {setShowElements(false);}
-  const handleButton3Click = () => {
-    router.push('/Cle')
+
+  const characterRef = useRef(null);
+
+  const onDownloadBtn = () => {
+    window.location.href = 'https://mail.google.com/mail/u/2/#inbox';
   }
 
   return (
@@ -248,15 +271,19 @@ const Clothes = () => {
       <div>
         <img className={Clothes2.Clothes01} src={Clothes01} />
       </div>
-      <button className={Clothes2.cle} onClick={handleButton3Click}>완성</button>
-      {/* 몸 이미지 */}
-      <div className="body">
-        <img className={Clothes2.body} src={body} />
+      <button className={Clothes2.cle} onClick={onDownloadBtn}>완성</button>
+      
+      <div id='Character'>
+        {/* 몸 이미지 */}
+        <div className="body">
+          <img className={Clothes2.body} src={body} />
+        </div>
+        {/* 머리 이미지 */}
+        <div className="head">
+          <img className={Clothes2.head} src={head} />
+        </div>
       </div>
-      {/* 머리 이미지 */}
-      <div className="head">
-        <img className={Clothes2.head} src={head} />
-      </div>
+      
 
       {/* 옷장 */}
       <div className={Clothes2.clothes}
@@ -412,6 +439,11 @@ const Clothes = () => {
             src={hair09}
             onClick={() => handlehairClick('hair9')}
           />
+           <img
+            className={Clothes2.hair10}
+            src={hair10}
+            onClick={() => handlehairClick('hair10')}
+          />
           {/* 눈썹 이미지 누르면 바뀌게 하기 */}
           <img
             className={Clothes2.eyebrow01} 
@@ -474,7 +506,21 @@ const Clothes = () => {
             src={eyes_07_icon}
             onClick={() => handleeyesClick('eyes7')}
           />
-
+          <img
+            className={Clothes2.eyes08}
+            src={eyes_08_icon}
+            onClick={() => handleeyesClick('eyes8')}
+          />
+          <img
+            className={Clothes2.eyes09}
+            src={eyes_09_icon}
+            onClick={() => handleeyesClick('eyes9')}
+          />
+          <img
+            className={Clothes2.eyes10}
+            src={eyes_10_icon}
+            onClick={() => handleeyesClick('eyes10')}
+          />
           {/* 입 이미지 누르면 바뀌게 하기 */}
           <img
             className={Clothes2.lips01}
@@ -515,6 +561,16 @@ const Clothes = () => {
             className={Clothes2.lips08}
             src={lips_08_icon}
             onClick={() => handlelipsClick('lips8')}
+          />
+          <img
+            className={Clothes2.lips09}
+            src={lips_09_icon}
+            onClick={() => handlelipsClick('lips9')}
+          />
+          <img
+            className={Clothes2.lips10}
+            src={lips_10_icon}
+            onClick={() => handlelipsClick('lips10')}
           />
         </div>
         <div
@@ -716,9 +772,9 @@ const Clothes = () => {
             onClick={() => handletopClick('top5')}
           />
           <img
-            className={Clothes2.top06}
-            src={top_06_icon}
-            onClick={() => handletopClick('top6')}
+            className={Clothes2.top11}
+            src={top_11_icon}
+            onClick={() => handletopClick('top11')}
           />
           <img
             className={Clothes2.top07}
@@ -772,9 +828,9 @@ const Clothes = () => {
             onClick={() => handleacc6Click('acc6')}
           />
            <img
-            className={Clothes2.acc07}
-            src={acc_07_icon}
-            onClick={() => handleacc7Click('acc7')}
+            className={Clothes2.acc11}
+            src={acc_11_icon}
+            onClick={() => handleacc7Click('acc11')}
           />
            <img
             className={Clothes2.acc08}
@@ -805,6 +861,9 @@ const Clothes = () => {
             selectedeyes === 'eyes5' ? eyes05 :
             selectedeyes === 'eyes6' ? eyes06 :
             selectedeyes === 'eyes7' ? eyes07 :
+            selectedeyes === 'eyes8' ? eyes08 :
+            selectedeyes === 'eyes9' ? eyes09 :
+            selectedeyes === 'eyes10' ? eyes10 :
           null}
         />
       )}
@@ -822,6 +881,7 @@ const Clothes = () => {
             selectedhair === 'hair7' ? hair07 :
             selectedhair === 'hair8' ? hair08 :
             selectedhair === 'hair9' ? hair09 :
+            selectedhair === 'hair10' ? hair10 :
           null}
         />
       )}
@@ -851,6 +911,8 @@ const Clothes = () => {
             selectedlips === 'lips6' ? lips06 :
             selectedlips === 'lips7' ? lips07 :
             selectedlips === 'lips8' ? lips08 :
+            selectedlips === 'lips9' ? lips09 :
+            selectedlips === 'lips10' ? lips10 :
           null}
         />
       )}
@@ -895,7 +957,7 @@ const Clothes = () => {
             selectedtop === 'top3' ? top03 :
             selectedtop === 'top4' ? top04 :
             selectedtop === 'top5' ? top05 :
-            selectedtop === 'top6' ? top06 :
+            selectedtop === 'top11' ? top11 :
             selectedtop === 'top7' ? top07 :
             selectedtop === 'top8' ? top08 :
             selectedtop === 'top9' ? top09 :
@@ -923,7 +985,7 @@ const Clothes = () => {
         <img className={Clothes2.body} src={selectedacc6 === 'acc6' ? acc06 :null}/>
       )}
       {handleacc7Click && (
-        <img className={Clothes2.body} src={selectedacc7 === 'acc7' ? acc07 :null}/>
+        <img className={Clothes2.body} src={selectedacc7 === 'acc11' ? acc11 :null}/>
       )}
       {handleacc8Click && (
         <img className={Clothes2.body} src={selectedacc8 === 'acc8' ? acc08 :null}/>

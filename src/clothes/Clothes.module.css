@@ -249,6 +249,18 @@ body{
     margin-left:620px;
     transform: scale(1.2);
 }
+.hair10 {
+    width: 100px;
+    position: absolute;
+    margin-left: 810px;
+    margin-top: 210px;
+}
+.hair10:hover{
+    width: 105px;
+    margin-top: 210px;
+    margin-left:810px;
+    transform: scale(1.2);
+}
 .hair07 {
     width: 100px;
     position: absolute;
@@ -520,12 +532,12 @@ body{
     width: 150px;
     position: absolute;
     margin-top: 700px;
-    margin-left: 215px;
+    margin-left: 415px;
 }
 .eyes07:hover {
     width: 150px;
     margin-top: 700px;
-    margin-left: 215px;
+    margin-left: 415px;
     transform: scale(1.2);
 }
 .eback8 {
@@ -537,7 +549,19 @@ body{
     margin-top: 700px;
     border-radius: 10px;
 
-}   
+}  
+.eyes08 {
+    width: 150px;
+    position: absolute;
+    margin-top: 700px;
+    margin-left: 600px;
+}
+.eyes08:hover {
+    width: 150px;
+    margin-top: 700px;
+    margin-left: 600px;
+    transform: scale(1.2);
+} 
 .eback9 {
     background-color:white ;
     width: 166px;
@@ -547,7 +571,19 @@ body{
     margin-top: 700px;
     border-radius: 10px;
 
-}   
+} 
+.eyes09 {
+    width: 150px;
+    position: absolute;
+    margin-top: 700px;
+    margin-left: 785px;
+}
+.eyes09:hover {
+    width: 150px;
+    margin-top: 700px;
+    margin-left: 785px;
+    transform: scale(1.2);
+}  
 .eback10 {
     background-color:white ;
     width: 166px;
@@ -556,6 +592,18 @@ body{
     margin-left: 780px;
     margin-top: 700px;
     border-radius: 10px;
+}
+.eyes10 {
+    width: 150px;
+    position: absolute;
+    margin-top: 700px;
+    margin-left: 215px;
+}
+.eyes10:hover {
+    width: 150px;
+    margin-top: 700px;
+    margin-left: 215px;
+    transform: scale(1.2);
 }
 /*입==============================================*/
 .lback1{
@@ -741,6 +789,18 @@ body{
     border-radius: 10px;
 
 }   
+.lips09 {
+    width: 100px;
+    position: absolute;
+    margin-top: 1065px;
+    margin-left: 625px;
+}
+.lips09:hover {
+    width: 110px;
+    margin-top:1065px;
+    margin-left: 625px;
+    transform: scale(1.2);
+}
 .lback10 {
     background-color:white ;
     width: 166px;
@@ -749,6 +809,18 @@ body{
     margin-left: 780px;
     margin-top: 1040px;
     border-radius: 10px;
+}
+.lips10 {
+    width: 100px;
+    position: absolute;
+    margin-top: 1065px;
+    margin-left: 825px;
+}
+.lips10:hover {
+    width: 110px;
+    margin-top:1065px;
+    margin-left: 825px;
+    transform: scale(1.2);
 }
 .lback11{
     background-color:rgb(255, 255, 255) ;
@@ -866,13 +938,13 @@ body{
     margin-top: 20px;
     border-radius: 10px;
 }
-.top06 {
+.top11 {
     width: 150px;
     position: absolute;
     margin-top: 200px;
     margin-left: 25px;
 }
-.top06:hover{
+.top11:hover{
     width: 150px;
     margin-top: 200px;
     margin-left: 25px;
@@ -1324,13 +1396,13 @@ body{
     margin-top: 870px;
     border-radius: 10px;
 }
-.acc07 {
+.acc11 {
     width: 150px;
     position: absolute;
     margin-top: 870px;
     margin-left: 220px;
 }
-.acc07:hover{
+.acc11:hover{
     width: 150px;
     margin-top: 870px;
     margin-left: 220px;
