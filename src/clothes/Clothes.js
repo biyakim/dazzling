@@ -259,7 +259,7 @@ const Clothes = () => {
           height: '900px',
           position: 'absolute',
           marginLeft: '800px',
-          marginTop: '20px',
+          marginTop: '80px',
           borderRadius: '20px',
           border: "5px solid #5301BF"
         }}

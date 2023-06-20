@@ -20,7 +20,7 @@ body{
     position: absolute;
     width: 700px;
     height: 700px;
-    margin-top: 200px;
+    margin-top: 250px;
     margin-left: 70px;
 
 }
@@ -28,13 +28,13 @@ body{
     width: 340px;
     position:absolute;
     margin-left: 260px;
-    margin-top: 280px;
+    margin-top: 330px;
 }
 .head {
     width: 340px;
     position:absolute;
     margin-left: 260px;
-    margin-top: 280px;
+    margin-top: 330px;
 }
 /*머리*/
 .hback1 {
