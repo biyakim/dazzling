@@ -1,5 +1,5 @@
 ## DAZZLING
-It show 출품작 나만의 아바타 옷 갈아입기 게임 입니다
+✨React로 제작한 It show 출품작 나만의 아바타 만들기 게임 "DAZZLING" 입니다!✨
 
 
 <!--# Getting Started with Create React App
