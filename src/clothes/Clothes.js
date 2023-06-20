@@ -1,4 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import {toPng} from 'html-to-image';
+import { saveAs } from 'file-saver';
+
 import { useHistory } from 'react-router-dom';
 import main02 from '../img/main_02.png';
 import Clothes2 from './Clothes.module.css';
@@ -235,12 +238,24 @@ const Clothes = () => {
   {/*버튼*/}
   const handleClosetButtonClick = () => {setShowElements(true);};
   const handleClosetButton2Click = () => {setShowElements(false);}
-  const handleButton3Click = () => {
-    router.push('/Cle')
-  }
+  const imageRef = useRef(null);
+
+  const handleDownload = () => {
+    toPng(imageRef.current)
+      .then((dataUrl) => {
+        const link = document.createElement('a');
+        link.href = dataUrl;
+        link.download = 'image.png';
+        link.click();
+      })
+      .catch((error) => {
+        console.error('Error generating image:', error);
+      });
+  };
+
 
   return (
-    <div>
+    <div ref={imageRef}>
       {/* 로고 이미지 */}
       <div className="img">
         <img className={Clothes2.main02} src={main02} />
@@ -248,7 +263,7 @@ const Clothes = () => {
       <div>
         <img className={Clothes2.Clothes01} src={Clothes01} />
       </div>
-      <button className={Clothes2.cle} onClick={handleButton3Click}>완성</button>
+      <button className={Clothes2.cle} onClick={handleDownload}>완성</button>
       {/* 몸 이미지 */}
       <div className="body">
         <img className={Clothes2.body} src={body} />
@@ -564,7 +579,7 @@ const Clothes = () => {
                 fontSize:'20px'
               }}> CLOSET</button>
           </div>
-
+          
           {/*bottom */}
           <div className={Clothes2.boback1}></div>
           <div className={Clothes2.boback2}></div>
@@ -608,7 +623,7 @@ const Clothes = () => {
           <div className={Clothes2.sback4}></div>
           <div className={Clothes2.sback5}></div>
           <div className={Clothes2.sback11}></div>
-
+        
 
           {/*신발*/}
           <img
@@ -794,6 +809,7 @@ const Clothes = () => {
           
         </div>
       </div>
+      
     {/* 이미지 누르면 head이미제 입혀지고 null이면 없어지게 하기 */}
     {handleeyesClick && (
         <img
@@ -934,8 +950,7 @@ const Clothes = () => {
       {handleacc10Click && (
         <img className={Clothes2.body} src={selectedacc10 === 'acc10' ? acc10 :null}/>
       )}
-
-     
+      
     </div>
   );
 };
