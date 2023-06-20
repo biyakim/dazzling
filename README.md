@@ -1,6 +1,9 @@
 ## DAZZLING
 ✨React로 제작한 It show 출품작 나만의 아바타 만들기 게임 "DAZZLING" 입니다!✨
 
+![image](https://github.com/biyakim/dazzling/assets/99780358/707c6224-f420-4a3c-948e-538e9d1341bc)
+
+
 
 <!--# Getting Started with Create React App
 
