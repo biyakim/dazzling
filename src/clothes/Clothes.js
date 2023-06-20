@@ -1,12 +1,11 @@
 import React, { useState, useRef } from 'react';
+import {toPng} from 'html-to-image';
 import { useHistory } from 'react-router-dom';
 import main02 from '../img/main_02.png';
 import Clothes2 from './Clothes.module.css';
 import head from '../img/avatar/head.png';
 import body from '../img/avatar/body.png';
 import Clothes01 from '../img/clothes_01.png';
-import html2canvas from 'html2canvas';
-import domtoimage from 'dom-to-image';
 import { saveAs } from 'file-saver';
 //eyes
 import eyes01 from '../img/avatar/eyes/eyes_01.png';
@@ -254,16 +253,28 @@ const Clothes = () => {
   {/*버튼*/}
   const handleClosetButtonClick = () => {setShowElements(true);};
 
-  const handleClosetButton2Click = () => {setShowElements(false);}
+  const handleClosetButton2Click = () => {setShowElements(false);};
 
-  const characterRef = useRef(null);
+  const imageRef = useRef(null);
 
   const onDownloadBtn = () => {
     window.location.href = 'https://mail.google.com/mail/u/2/#inbox';
+    toPng(imageRef.current)
+      .then((dataUrl) => {
+        const link = document.createElement('a');
+        link.href = dataUrl;
+        link.download = 'image.png';
+        link.click();
+      })
+      .catch((error) => {
+        console.error('Error generating image:', error);
+      });
   }
+  
+
 
   return (
-    <div>
+    <div ref={imageRef}>
       {/* 로고 이미지 */}
       <div className="img">
         <img className={Clothes2.main02} src={main02} />
@@ -271,6 +282,7 @@ const Clothes = () => {
       <div>
         <img className={Clothes2.Clothes01} src={Clothes01} />
       </div>
+
       <button className={Clothes2.cle} onClick={onDownloadBtn}>완성</button>
       
       <div id='Character'>
@@ -282,6 +294,7 @@ const Clothes = () => {
         <div className="head">
           <img className={Clothes2.head} src={head} />
         </div>
+
       </div>
       
 
@@ -620,7 +633,7 @@ const Clothes = () => {
                 fontSize:'20px'
               }}> CLOSET</button>
           </div>
-
+          
           {/*bottom */}
           <div className={Clothes2.boback1}></div>
           <div className={Clothes2.boback2}></div>
@@ -664,7 +677,7 @@ const Clothes = () => {
           <div className={Clothes2.sback4}></div>
           <div className={Clothes2.sback5}></div>
           <div className={Clothes2.sback11}></div>
-
+        
 
           {/*신발*/}
           <img
@@ -850,6 +863,7 @@ const Clothes = () => {
           
         </div>
       </div>
+      
     {/* 이미지 누르면 head이미제 입혀지고 null이면 없어지게 하기 */}
     {handleeyesClick && (
         <img
@@ -996,8 +1010,7 @@ const Clothes = () => {
       {handleacc10Click && (
         <img className={Clothes2.body} src={selectedacc10 === 'acc10' ? acc10 :null}/>
       )}
-
-     
+      
     </div>
   );
 };
