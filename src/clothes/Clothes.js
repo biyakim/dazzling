@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import main02 from '../img/main_02.png';
 import Clothes2 from './Clothes.module.css';
 import head from '../img/avatar/head.png';
@@ -162,6 +163,8 @@ const Clothes = () => {
 
   const [selectedlips, setSelectedlips] = useState(null);
 
+  const router = useHistory();
+
   const [selectedacc, setSelectedacc] = useState(null);
   const [selectedacc2, setSelectedacc2] = useState(null);
   const [selectedacc3, setSelectedacc3] = useState(null);
@@ -232,6 +235,9 @@ const Clothes = () => {
   {/*버튼*/}
   const handleClosetButtonClick = () => {setShowElements(true);};
   const handleClosetButton2Click = () => {setShowElements(false);}
+  const handleButton3Click = () => {
+    router.push('/Cle')
+  }
 
   return (
     <div>
@@ -242,6 +248,7 @@ const Clothes = () => {
       <div>
         <img className={Clothes2.Clothes01} src={Clothes01} />
       </div>
+      <button className={Clothes2.cle} onClick={handleButton3Click}>완성</button>
       {/* 몸 이미지 */}
       <div className="body">
         <img className={Clothes2.body} src={body} />
@@ -603,6 +610,33 @@ const Clothes = () => {
           <div className={Clothes2.sback11}></div>
 
 
+          {/*신발*/}
+          <img
+            className={Clothes2.shoes01}
+            src={shoes01_icon}
+            onClick={() => handleshoesClick('shoes')}
+          />
+           <img
+            className={Clothes2.shoes02}
+            src={shoes02_icon}
+            onClick={() => handleshoesClick('shoes2')}
+          />
+           <img
+            className={Clothes2.shoes03}
+            src={shoes03_icon}
+            onClick={() => handleshoesClick('shoes3')}
+          />
+           <img
+            className={Clothes2.shoes04}
+            src={shoes04_icon}
+            onClick={() => handleshoesClick('shoes4')}
+          />
+           <img
+            className={Clothes2.shoes05}
+            src={shoes05_icon}
+            onClick={() => handleshoesClick('shoes5')}
+          />
+
           {/* bottom */}
           <img
             className={Clothes2.bottom01}
@@ -757,32 +791,7 @@ const Clothes = () => {
             src={acc_10_icon}
             onClick={() => handleacc10Click('acc10')}
           />
-          {/*신발*/}
-           <img
-            className={Clothes2.shoes01}
-            src={shoes01_icon}
-            onClick={() => handleshoesClick('shoes')}
-          />
-           <img
-            className={Clothes2.shoes02}
-            src={shoes02_icon}
-            onClick={() => handleshoesClick('shoes2')}
-          />
-           <img
-            className={Clothes2.shoes03}
-            src={shoes03_icon}
-            onClick={() => handleshoesClick('shoes3')}
-          />
-           <img
-            className={Clothes2.shoes04}
-            src={shoes04_icon}
-            onClick={() => handleshoesClick('shoes4')}
-          />
-           <img
-            className={Clothes2.shoes05}
-            src={shoes05_icon}
-            onClick={() => handleshoesClick('shoes5')}
-          />
+          
         </div>
       </div>
     {/* 이미지 누르면 head이미제 입혀지고 null이면 없어지게 하기 */}
@@ -843,6 +852,19 @@ const Clothes = () => {
             selectedlips === 'lips7' ? lips07 :
             selectedlips === 'lips8' ? lips08 :
           null}
+        />
+      )}
+
+{handleshoesClick && (
+        <img
+          className={Clothes2.head}
+          src={
+            selectedshoes === 'shoes' ? shoes01 :
+            selectedshoes === 'shoes2' ? shoes02 :
+            selectedshoes === 'shoes3' ? shoes03 :
+            selectedshoes === 'shoes4' ? shoes04 :
+            selectedshoes === 'shoes5' ? shoes05 :
+            null}
         />
       )}
 
@@ -913,18 +935,7 @@ const Clothes = () => {
         <img className={Clothes2.body} src={selectedacc10 === 'acc10' ? acc10 :null}/>
       )}
 
-      {handleshoesClick && (
-        <img
-          className={Clothes2.head}
-          src={
-            selectedshoes === 'shoes' ? shoes01 :
-            selectedshoes === 'shoes2' ? shoes02 :
-            selectedshoes === 'shoes3' ? shoes03 :
-            selectedshoes === 'shoes4' ? shoes04 :
-            selectedshoes === 'shoes5' ? shoes05 :
-            null}
-        />
-      )}
+     
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import Main from './main/Main';
 import Clothes from './clothes/Clothes';
-import Clothes2 from './clothes/Clothes2';
+import Cle from './clothes/Cle';
 import { Switch } from 'react-router-dom';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Main}  />
           <Route path="/Clothes" component={Clothes}/>
-          <Route path="/Clothes2" component={Clothes2}/>
+          <Route path="/Cle" component={Cle}/>
         </Switch>
         
       </Router>
