@@ -1,4 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import htmlToImage, {toPng} from 'html-to-image';
+import QRCode from 'qrcode.react';
+import { saveAs } from 'file-saver';
+
 import { useHistory } from 'react-router-dom';
 import main02 from '../img/main_02.png';
 import Clothes2 from './Clothes.module.css';
@@ -235,9 +239,39 @@ const Clothes = () => {
   {/*버튼*/}
   const handleClosetButtonClick = () => {setShowElements(true);};
   const handleClosetButton2Click = () => {setShowElements(false);}
-  const handleButton3Click = () => {
-    router.push('/Cle')
-  }
+
+  const imageRef = useRef(null);
+  const qrCodeRef = useRef(null);
+
+  const handleDownload = () => {
+    toPng(imageRef.current)
+      .then((dataUrl) => {
+        const imageBlob = dataURLToBlob(dataUrl);
+        saveAs(imageBlob, 'image.png');
+      })
+      .catch((error) => {
+        console.error('Error generating image:', error);
+      });
+
+    const qrCodeCanvas = qrCodeRef.current.querySelector('canvas');
+    qrCodeCanvas.toBlob((qrCodeBlob) => {
+      saveAs(qrCodeBlob, 'qrcode.png');
+    });
+  };
+
+  const dataURLToBlob = (dataURL) => {
+    const base64Split = dataURL.split(',');
+    const contentType = base64Split[0].match(/:(.*?);/)[1];
+    const byteString = atob(base64Split[1]);
+    let arrayBuffer = new ArrayBuffer(byteString.length);
+    let intArray = new Uint8Array(arrayBuffer);
+
+    for (let i = 0; i < byteString.length; i++) {
+      intArray[i] = byteString.charCodeAt(i);
+    }
+
+    return new Blob([intArray], { type: contentType });
+  };
 
   return (
     <div>
@@ -248,14 +282,22 @@ const Clothes = () => {
       <div>
         <img className={Clothes2.Clothes01} src={Clothes01} />
       </div>
-      <button className={Clothes2.cle} onClick={handleButton3Click}>완성</button>
-      {/* 몸 이미지 */}
-      <div className="body">
-        <img className={Clothes2.body} src={body} />
+      <button className={Clothes2.cle} onClick={handleDownload}>완성</button>
+
+      <div ref={imageRef}>
+        {/* 지정한 부분의 HTML */}
+        {/* 몸 이미지 */}
+        <div className="body">
+          <img className={Clothes2.body} src={body} />
+        </div>
+        {/* 머리 이미지 */}
+        <div className="head">
+          <img className={Clothes2.head} src={head} />
+        </div>
       </div>
-      {/* 머리 이미지 */}
-      <div className="head">
-        <img className={Clothes2.head} src={head} />
+
+      <div ref={qrCodeRef}>
+        <QRCode value="https://example.com" />
       </div>
 
       {/* 옷장 */}
