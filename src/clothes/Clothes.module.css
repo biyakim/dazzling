@@ -1492,55 +1492,10 @@ body{
     margin-left: 785px;
     transform: scale(1.2);
 }
-.sback6 {
-    background-color:white ;
-    width: 166px;
-    height: 150px;
-    position: absolute;
-    margin-left: 20px;
-    margin-top: 1210px;
-    border-radius: 10px;
-}
-.sback7 {
-    background-color:white ;
-    width: 166px;
-    height: 150px;
-    position: absolute;
-    margin-left: 210px;
-    margin-top: 1210px;
-    border-radius: 10px;
-}
-.sback8 {
-    background-color:white ;
-    width: 166px;
-    height: 150px;
-    position: absolute;
-    margin-left: 400px;
-    margin-top: 1210px;
-    border-radius: 10px;
-}
-.sback9 {
-    background-color:white ;
-    width: 166px;
-    height: 150px;
-    position: absolute;
-    margin-left: 590px;
-    margin-top: 1210px;
-    border-radius: 10px;
-}
-.sback10 {
-    background-color:white ;
-    width: 166px;
-    height: 150px;
-    position: absolute;
-    margin-left: 780px;
-    margin-top: 1210px;
-    border-radius: 10px;
-}
 .sback11{
-    background-color:white ;
+    background-color:rgb(188, 167, 249) ;
     width: 940px;
     height: 0.1px;
     position: absolute;
-    margin-top: 1380px;
+    margin-top: 1210px;
 }

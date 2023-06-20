@@ -634,11 +634,6 @@ const Clothes = () => {
           <div className={Clothes2.sback3}></div>
           <div className={Clothes2.sback4}></div>
           <div className={Clothes2.sback5}></div>
-          <div className={Clothes2.sback6}></div>
-          <div className={Clothes2.sback7}></div>
-          <div className={Clothes2.sback8}></div>
-          <div className={Clothes2.sback9}></div>
-          <div className={Clothes2.sback10}></div>
           <div className={Clothes2.sback11}></div>
 
 
