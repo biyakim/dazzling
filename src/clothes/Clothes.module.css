@@ -130,12 +130,12 @@ body{
     width: 130px;
     position: absolute;
     margin-left:610px;
-    margin-top: 25px;
+    margin-top: 35px;
 }
 .hair04:hover{
     width: 120px;
-    margin-top: 40px;
-    margin-left:610px;
+    margin-top: 45px;
+    margin-left:615px;
     transform: scale(1.2);
 }  
 .hback5 {
@@ -151,13 +151,13 @@ body{
 .hair05 {
     width: 130px;
     position: absolute;
-    margin-left:795px;
-    margin-top: 25px;
+    margin-left:800px;
+    margin-top: 40px;
 }
 .hair05:hover{
     width: 120px;
-    margin-top: 40px;
-    margin-left:795px;
+    margin-top: 55px;
+    margin-left:805px;
     transform: scale(1.2);
 }  
 
@@ -196,11 +196,11 @@ body{
 .hair07 {
     width: 100px;
     position: absolute;
-    margin-left: 243px;
-    margin-top: 198px;
+    margin-left: 248px;
+    margin-top: 210px;
 }
 .hair07:hover{
-    width: 105px;
+    width: 100px;
     margin-top: 205px;
     margin-left:234px;
     transform: scale(1.2);
@@ -218,13 +218,13 @@ body{
 .hair08 {
     width: 100px;
     position: absolute;
-    margin-left: 433px;
-    margin-top: 225px;
+    margin-left: 435px;
+    margin-top: 230px;
 }
 .hair08:hover{
     width: 100px;
     margin-top: 225px;
-    margin-left:433px;
+    margin-left:4300px;
     transform: scale(1.2);
 }  
 .hback9 {
@@ -238,26 +238,26 @@ body{
 
 }   
 .hair09 {
-    width: 100px;
+    width: 110px;
     position: absolute;
     margin-left: 620px;
-    margin-top: 210px;
+    margin-top: 212px;
 }
 .hair09:hover{
     width: 105px;
-    margin-top: 210px;
+    margin-top: 220px;
     margin-left:620px;
     transform: scale(1.2);
 }
 .hair10 {
     width: 100px;
     position: absolute;
-    margin-left: 810px;
-    margin-top: 210px;
+    margin-left: 814px;
+    margin-top: 230px;
 }
 .hair10:hover{
     width: 105px;
-    margin-top: 210px;
+    margin-top: 240px;
     margin-left:810px;
     transform: scale(1.2);
 }
