@@ -1138,15 +1138,6 @@ body{
     margin-top: 530px;
     border-radius: 10px;
 }
-.boback10 {
-    background-color:white ;
-    width: 166px;
-    height: 150px;
-    position: absolute;
-    margin-left: 780px;
-    margin-top: 530px;
-    border-radius: 10px;
-}
 .bottom09 {
     width: 150px;
     position: absolute;
@@ -1159,6 +1150,28 @@ body{
     margin-left: 600px;
     transform: scale(1.2);
 }
+.boback10 {
+    background-color:white ;
+    width: 166px;
+    height: 150px;
+    position: absolute;
+    margin-left: 780px;
+    margin-top: 530px;
+    border-radius: 10px;
+}
+.bottom10 {
+    width: 140px;
+    position: absolute;
+    margin-top: 530px;
+    margin-left: 795px;
+}
+.bottom10:hover{
+    width: 150px;
+    margin-top: 530px;
+    margin-left: 790px;
+    transform: scale(1.2);
+}
+
 /*액세서리==============================*/
 .aback1 {
     background-color:white ;
@@ -1341,15 +1354,15 @@ body{
     border-radius: 10px;
 }
 .acc09 {
-    width: 130px;
+    width: 100px;
     position: absolute;
-    margin-top: 880px;
-    margin-left: 605px;
+    margin-top: 895px;
+    margin-left: 623px;
 }
 .acc09:hover{
-    width: 130px;
-    margin-top: 880px;
-    margin-left: 605px;
+    width: 110px;
+    margin-top: 887px;
+    margin-left: 620px;
     transform: scale(1.2);
 }
 .aback10 {
@@ -1362,14 +1375,14 @@ body{
     border-radius: 10px;
 }
 .acc10 {
-    width: 130px;
+    width: 110px;
     position: absolute;
-    margin-top: 880px;
-    margin-left: 805px;
+    margin-top: 890px;
+    margin-left: 810px;
 }
 .acc10:hover{
-    width: 130px;
-    margin-top: 880ㅔㅌ;
+    width: 120px;
+    margin-top: 885px;
     margin-left: 805px;
     transform: scale(1.2);
 }

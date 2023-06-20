@@ -58,6 +58,8 @@ import bottom06 from '../img/avatar/clothes/bottom/bottom_06.png';
 import bottom07 from '../img/avatar/clothes/bottom/bottom_07.png';
 import bottom08 from '../img/avatar/clothes/bottom/bottom_08.png';
 import bottom09 from '../img/avatar/clothes/bottom/bottom_09.png';
+import bottom10 from '../img/avatar/clothes/bottom/bottom_10.png';
+
 //acc
 import acc01 from '../img/avatar/accessories/acc_01.png';
 import acc02 from '../img/avatar/accessories/acc_02.png';
@@ -132,6 +134,7 @@ import bottom_06_icon from '../img/avatar/icon/clothes/bottom/bottom_06_icon.png
 import bottom_07_icon from '../img/avatar/icon/clothes/bottom/bottom_07_icon.png';
 import bottom_08_icon from '../img/avatar/icon/clothes/bottom/bottom_08_icon.png';
 import bottom_09_icon from '../img/avatar/icon/clothes/bottom/bottom_09_icon.png';
+import bottom_10_icon from '../img/avatar/icon/clothes/bottom/bottom_10_icon.png';
 
 //shoes
 import shoes01 from '../img/avatar/clothes/shoes/shoes_01.png';
@@ -685,6 +688,12 @@ const Clothes = () => {
             src={bottom_09_icon}
             onClick={() => handlebottomClick('bottom9')}
           />
+          <img
+            className={Clothes2.bottom10}
+            src={bottom_10_icon}
+            onClick={() => handlebottomClick('bottom10')}
+          />
+
           {/* top */}
           <img
             className={Clothes2.top01}
@@ -889,6 +898,7 @@ const Clothes = () => {
             selectedbottom === 'bottom7' ? bottom07 :
             selectedbottom === 'bottom8' ? bottom08 :
             selectedbottom === 'bottom9' ? bottom09 :
+            selectedbottom === 'bottom10' ? bottom10 :
           null}
         />
       )}
