@@ -207,7 +207,6 @@ const Clothes = () => {
   const handletopClick = (clothing) => { setSelectedtop(clothing); setShowElements(true); };
   const handlebottomClick = (clothing) => { setSelectedbottom(clothing); setShowElements(true); };
   const handleshoesClick = (clothing) => { setSelectedshoes(clothing); setShowElements(true); };
-  const [savedImage, setSavedImage] = useState(null);
 
   const handleaccClick = (clothing) => {setSelectedacc((prevSelectedacc) =>
       prevSelectedacc === clothing ? null : clothing); 
@@ -261,7 +260,16 @@ const Clothes = () => {
     router.push('/');
   }
   
-
+  const handleClick = () => {
+    const confirmation = window.confirm("이미지를 캡쳐 하셨나요?");
+    
+    if (confirmation) {
+      window.open('https://mail.google.com/mail/u/0/#inbox', '_blank', 'width=600, height=600');
+    } else {
+    }
+    
+    
+  };
 
   return (
     <div ref={imageRef}>
@@ -273,9 +281,7 @@ const Clothes = () => {
         <img className={Clothes2.Clothes01} src={Clothes01} />
       </div>
       <button className={Clothes2.btn} onClick={btn}>처음으로 가기</button>
-      <button className={Clothes2.cle} onClick={() => {
-        alert("이미지를 캡쳐 하셨나요?")
-        window.open('https://mail.google.com/mail/u/1/#inbox', '_blank', 'width=600, height=600')}}>완성</button>
+      <button className={Clothes2.cle} onClick={handleClick}>완성</button>
 
 
 
@@ -824,7 +830,7 @@ const Clothes = () => {
             className={Clothes2.acc04}
             src={acc_04_icon}
             onClick={() => handleacc4Click('acc4')}
-          />
+          />  
           <img
             className={Clothes2.acc05}
             src={acc_05_icon}
