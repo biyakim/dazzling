@@ -37,6 +37,20 @@ body{
     font-size: 20px;
     font-weight: bold;
 }
+.btn {
+    width: 130px;
+    height: 50px;
+    background-color: #7857DB;
+    position: absolute;
+    border-radius: 20px;
+    margin-top: 930px;
+    margin-left: 1670px;
+    z-index: 1;
+    border: 3px solid #5301BF;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
 .body{
     width: 340px;
     position:absolute;

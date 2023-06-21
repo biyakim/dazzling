@@ -257,18 +257,8 @@ const Clothes = () => {
 
   const imageRef = useRef(null);
 
-  const onDownloadBtn = () => {
-    window.location.href = 'https://mail.google.com/mail/u/2/#inbox';
-    toPng(imageRef.current)
-      .then((dataUrl) => {
-        const link = document.createElement('a');
-        link.href = dataUrl;
-        link.download = 'image.png';
-        link.click();
-      })
-      .catch((error) => {
-        console.error('Error generating image:', error);
-      });
+  const btn = () => {
+    router.push('/');
   }
   
 
@@ -282,8 +272,11 @@ const Clothes = () => {
       <div>
         <img className={Clothes2.Clothes01} src={Clothes01} />
       </div>
+      <button className={Clothes2.btn} onClick={btn}>처음으로 가기</button>
+      <button className={Clothes2.cle} onClick={() => window.open('https://mail.google.com/mail/u/0/#inbox', '_blank', 'width=600, height=600')}>완성</button>
 
-      <button className={Clothes2.cle} onClick={onDownloadBtn}>완성</button>
+
+
       
       <div id='Character'>
         {/* 몸 이미지 */}
