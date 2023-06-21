@@ -273,7 +273,9 @@ const Clothes = () => {
         <img className={Clothes2.Clothes01} src={Clothes01} />
       </div>
       <button className={Clothes2.btn} onClick={btn}>처음으로 가기</button>
-      <button className={Clothes2.cle} onClick={() => window.open('https://mail.google.com/mail/u/1/#inbox', '_blank', 'width=600, height=600')}>완성</button>
+      <button className={Clothes2.cle} onClick={() => {
+        alert("이미지를 캡쳐 하셨나요?")
+        window.open('https://mail.google.com/mail/u/1/#inbox', '_blank', 'width=600, height=600')}}>완성</button>
 
 
 
